@@ -117,12 +117,24 @@ function MainContent() {
   )
 }
 
+// Update canonical URL based on current language
+function updateCanonical(lang: 'en' | 'zh') {
+  const canonical = document.querySelector('link[rel="canonical"]')
+  const baseUrl = 'https://sshkeygenerator.com'
+  const url = lang === 'zh' ? `${baseUrl}/zh-Hans/` : `${baseUrl}/`
+
+  if (canonical) {
+    canonical.setAttribute('href', url)
+  }
+}
+
 // Language route wrapper that syncs language from URL
 function LanguageRoute({ lang }: { lang: 'en' | 'zh' }) {
   const { setLanguage } = useLanguageStore()
 
   useEffect(() => {
     setLanguage(lang)
+    updateCanonical(lang)
   }, [lang, setLanguage])
 
   return <MainContent />
