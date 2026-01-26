@@ -1,0 +1,342 @@
+{
+  "header": {
+    "title": "SSH Anahtar Oluşturucu",
+    "subtitle": "Ücretsiz ve Güvenli",
+    "clientSide": "%100 İstemci Taraflı",
+    "viewOnGitHub": "GitHub'da Görüntüle"
+  },
+  "hero": {
+    "title": "Çevrimiçi SSH Anahtar Oluşturucu",
+    "subtitle": "Tarayıcınızda anında güvenli SSH anahtarları oluşturun. GitHub, GitLab, Bitbucket ve tüm SSH sunucularıyla uyumludur."
+  },
+  "tabs": {
+    "generate": "Anahtar Oluştur",
+    "generateShort": "Oluştur",
+    "commands": "Komut Modu",
+    "commandsShort": "Komutlar",
+    "config": "SSH Yapılandırması",
+    "configShort": "Yapılandırma",
+    "guides": "Platform Kılavuzları",
+    "guidesShort": "Kılavuzlar"
+  },
+  "generator": {
+    "title": "Çevrimiçi SSH Anahtar Oluşturucu",
+    "description": "Tarayıcınızda güvenli bir şekilde yeni SSH anahtar çifti oluşturun. Hiçbir veri sunucuya gönderilmez.",
+    "algorithm": "Algoritma",
+    "algorithmTooltip": "Ed25519 çoğu durum için önerilir. Eski sistemlerle uyumluluk gerekiyorsa RSA kullanın.",
+    "comment": "Açıklama (isteğe bağlı)",
+    "commentTooltip": "Bu anahtarı tanımlamanıza yardımcı olacak bir açıklama. Genellikle e-posta adresiniz.",
+    "commentPlaceholder": "kullanici@ornek.com",
+    "generateButton": "Anahtar Çifti Oluştur",
+    "generating": "Oluşturuluyor...",
+    "passphrase": "Parola (isteğe bağlı)",
+    "passphraseTooltip": "Parola ek güvenlik sağlar. Birisi özel anahtarınızı ele geçirse bile parola olmadan kullanamaz.",
+    "passphrasePlaceholder": "Şifreleme için parola girin",
+    "confirmPassphrase": "Parolayı Onayla",
+    "confirmPassphrasePlaceholder": "Parolayı tekrar girin",
+    "passphrasesMismatch": "Parolalar eşleşmiyor",
+    "noPassphraseWarning": "Parola belirlenmedi. Özel anahtarınız şifrelenmeyecek. Ek güvenlik için parola eklemeyi düşünün.",
+    "securityTitle": "%100 İstemci Taraflı SSH Anahtar Oluşturucu",
+    "securityDesc": "Tüm anahtar oluşturma işlemi tarayıcınızda gerçekleşir. Bu çevrimiçi SSH anahtar oluşturucu özel anahtarlarınızı asla iletmez.",
+    "noKeysYet": "Henüz anahtar oluşturulmadı",
+    "noKeysHint": "SSH anahtarlarınızı oluşturmak için \"Anahtar Çifti Oluştur\" düğmesine tıklayın"
+  },
+  "algorithms": {
+    "ed25519": "Ed25519 (Önerilen)",
+    "ed25519Desc": "Modern, hızlı, güvenli. Çoğu kullanım için en iyisi.",
+    "rsa4096": "RSA 4096-bit",
+    "rsa4096Desc": "Eski sistemlerle maksimum uyumluluk.",
+    "rsa2048": "RSA 2048-bit",
+    "rsa2048Desc": "Uyumluluk için önerilen minimum RSA boyutu."
+  },
+  "keyDisplay": {
+    "publicKey": "Genel Anahtar",
+    "publicKeyDesc": "Bunu uzak sunuculardaki authorized_keys dosyasına veya GitHub/GitLab hesabınıza ekleyin.",
+    "privateKey": "Özel Anahtar",
+    "privateKeyWarning": "Bunu gizli tutun! Özel anahtarınızı asla paylaşmayın.",
+    "fingerprint": "Anahtar Parmak İzi",
+    "copy": "Kopyala",
+    "copied": "Kopyalandı!",
+    "download": "İndir",
+    "reveal": "Göster",
+    "hide": "Gizle",
+    "clickToReveal": "Özel anahtarı görüntülemek için Göster'e tıklayın"
+  },
+  "commands": {
+    "title": "SSH Anahtar Oluşturma Komutları",
+    "description": "Tercih ettiğiniz platform için ssh-keygen komutları oluşturun. Bunları kopyalayıp terminalinizde çalıştırın.",
+    "algorithm": "Algoritma",
+    "comment": "Açıklama",
+    "filename": "Dosya Adı (isteğe bağlı)",
+    "quickCommand": "Hızlı Komut",
+    "completeSetup": "Tam Kurulum",
+    "copyAll": "Tümünü Kopyala"
+  },
+  "sshConfig": {
+    "title": "SSH Yapılandırma Oluşturucu",
+    "description": "~/.ssh/config dosyanızı oluşturun. Sunucu ekleyin ve yapılandırmayı indirin.",
+    "hostAlias": "Sunucu Takma Adı",
+    "hostAliasRequired": "Sunucu Takma Adı *",
+    "hostname": "Sunucu Adresi",
+    "hostnameRequired": "Sunucu Adresi *",
+    "hostnamePlaceholder": "192.168.1.100 veya ornek.com",
+    "user": "Kullanıcı",
+    "port": "Port",
+    "identityFile": "Kimlik Dosyası",
+    "identityFilePlaceholder": "~/.ssh/id_ed25519",
+    "addHost": "Sunucu Ekle",
+    "configuredHosts": "Yapılandırılmış Sunucular",
+    "generatedConfig": "Oluşturulan Yapılandırma",
+    "saveToPath": "Bunu ~/.ssh/config dosyasına kaydedin",
+    "noHosts": "# Henüz sunucu yapılandırılmadı",
+    "advancedOptions": "Gelişmiş Seçenekler",
+    "proxyJump": "Ara Sunucu",
+    "proxyJumpPlaceholder": "atlama-sunucusu",
+    "proxyJumpDesc": "Hedefe ulaşmak için bir atlama sunucusu üzerinden bağlan",
+    "forwardAgent": "Agent Yönlendirme",
+    "forwardAgentDesc": "SSH agent'ınızı uzak sunucuya yönlendir"
+  },
+  "guides": {
+    "title": "Platform Kurulum Kılavuzları",
+    "description": "Popüler Git platformlarında SSH anahtarlarını yapılandırmak için adım adım talimatlar.",
+    "officialDocs": "Resmi Belgeler",
+    "sshSetup": "{platform} SSH Kurulumu",
+    "github": {
+      "step1Title": "SSH Anahtarı Oluştur",
+      "step1Desc": "Yukarıdaki oluşturucuyu kullanın veya bu komutu çalıştırın:",
+      "step2Title": "SSH Agent'ı Başlat",
+      "step2Desc": "ssh-agent'ı arka planda başlatın:",
+      "step3Title": "Anahtarı Agent'a Ekle",
+      "step3Desc": "SSH özel anahtarınızı agent'a ekleyin:",
+      "step4Title": "Genel Anahtarı Kopyala",
+      "step4Desc": "Genel anahtarınızı panoya kopyalayın:",
+      "step5Title": "GitHub'a Ekle",
+      "step5Desc": "GitHub Ayarları > SSH ve GPG anahtarları > Yeni SSH anahtarı bölümüne gidin. Genel anahtarınızı yapıştırın.",
+      "step6Title": "Bağlantıyı Test Et",
+      "step6Desc": "SSH bağlantınızı doğrulayın:"
+    },
+    "gitlab": {
+      "step1Title": "SSH Anahtarı Oluştur",
+      "step1Desc": "Daha iyi güvenlik için Ed25519 kullanın:",
+      "step2Title": "Anahtarı Agent'a Ekle",
+      "step2Desc": "SSH anahtarınızı agent'a ekleyin:",
+      "step3Title": "Genel Anahtarı Kopyala",
+      "step3Desc": "Genel anahtarınızı kopyalayın:",
+      "step4Title": "GitLab'a Ekle",
+      "step4Desc": "GitLab Tercihler > SSH Anahtarları bölümüne gidin. Genel anahtarınızı yapıştırın ve son kullanma tarihi belirleyin.",
+      "step5Title": "Bağlantıyı Test Et",
+      "step5Desc": "SSH bağlantınızı doğrulayın:"
+    },
+    "bitbucket": {
+      "step1Title": "SSH Anahtarı Oluştur",
+      "step1Desc": "Ed25519 SSH anahtarı oluşturun:",
+      "step2Title": "Anahtarı Agent'a Ekle",
+      "step2Desc": "ssh-agent'ı başlatın ve anahtarınızı ekleyin:",
+      "step3Title": "Genel Anahtarı Kopyala",
+      "step3Desc": "Genel anahtarınızı panoya kopyalayın:",
+      "step4Title": "Bitbucket'a Ekle",
+      "step4Desc": "Bitbucket Ayarları > Kişisel ayarlar > SSH anahtarları > Anahtar ekle bölümüne gidin.",
+      "step5Title": "Bağlantıyı Test Et",
+      "step5Desc": "SSH bağlantınızı doğrulayın:"
+    },
+    "aws": {
+      "step1Title": "SSH Anahtarı Oluştur",
+      "step1Desc": "AWS EC2 için Ed25519 SSH anahtarı oluşturun:",
+      "step2Title": "Genel Anahtarı Kopyala",
+      "step2Desc": "Kopyalamak için genel anahtarınızı görüntüleyin:",
+      "step3Title": "Anahtarı AWS'ye Aktar",
+      "step3Desc": "AWS Konsolu > EC2 > Anahtar Çiftleri > Eylemler > Anahtar Çifti İçe Aktar bölümüne gidin. Genel anahtarınızı yapıştırın.",
+      "step4Title": "İzinleri Ayarla",
+      "step4Desc": "Özel anahtarınızın doğru izinlere sahip olduğundan emin olun:",
+      "step5Title": "Sunucuya Bağlan",
+      "step5Desc": "EC2 sunucunuza SSH ile bağlanın (kendi bilgilerinizle değiştirin):"
+    },
+    "azure": {
+      "step1Title": "SSH Anahtarı Oluştur",
+      "step1Desc": "Azure için Ed25519 SSH anahtarı oluşturun:",
+      "step2Title": "Genel Anahtarı Kopyala",
+      "step2Desc": "Genel anahtarınızı görüntüleyin:",
+      "step3Title": "VM Oluşturulurken Ekle",
+      "step3Desc": "VM oluştururken kimlik doğrulama için 'SSH genel anahtarı' seçin ve genel anahtarınızı yapıştırın.",
+      "step4Title": "VM'ye Bağlan",
+      "step4Desc": "Azure VM'nize SSH ile bağlanın:",
+      "step5Title": "Mevcut VM'yi Güncelle (İsteğe Bağlı)",
+      "step5Desc": "Azure CLI kullanarak mevcut VM'ye anahtar ekleyin:"
+    },
+    "digitalocean": {
+      "step1Title": "SSH Anahtarı Oluştur",
+      "step1Desc": "Ed25519 SSH anahtarı oluşturun:",
+      "step2Title": "Genel Anahtarı Kopyala",
+      "step2Desc": "Kopyalamak için genel anahtarınızı görüntüleyin:",
+      "step3Title": "DigitalOcean'a Ekle",
+      "step3Desc": "DigitalOcean Kontrol Paneli > Ayarlar > Güvenlik > SSH Anahtarları > SSH Anahtarı Ekle bölümüne gidin.",
+      "step4Title": "Droplet Oluştur",
+      "step4Desc": "Droplet oluştururken 'Kimlik Doğrulama' altında SSH anahtarınızı seçin.",
+      "step5Title": "Droplet'a Bağlan",
+      "step5Desc": "Droplet'ınıza SSH ile bağlanın:"
+    }
+  },
+  "footer": {
+    "about": "Bu Çevrimiçi SSH Anahtar Oluşturucu Hakkında",
+    "aboutDesc": "Bu, tamamen tarayıcınızda çalışan ücretsiz ve açık kaynaklı bir çevrimiçi SSH anahtar oluşturucudur. Sunucu taraflı işlem yok, veri toplama yok - sadece güvenli anahtar oluşturma.",
+    "securityFirst": "Önce Güvenlik",
+    "security1": "Tüm anahtar oluşturma işlemi tarayıcınızda gerçekleşir",
+    "security2": "Hiçbir veri herhangi bir sunucuya gönderilmez",
+    "security3": "Açık kaynak ve denetlenebilir kod",
+    "security4": "Endüstri standardı kriptografik kütüphaneler kullanır",
+    "resources": "Kaynaklar",
+    "sshKeyGuide": "GitHub SSH Belgeleri",
+    "githubSetup": "GitLab SSH Belgeleri",
+    "bestPractices": "SSH Akademisi",
+    "madeWith": "Dünya genelindeki geliştiriciler için",
+    "forDevelopers": "ile yapıldı",
+    "copyright": "© {year} SSH Anahtar Oluşturucu. MIT Lisansı altında açık kaynak."
+  },
+  "seo": {
+    "whatIs": {
+      "title": "Çevrimiçi SSH Anahtar Oluşturucu Nedir?",
+      "desc": "Bu araç gibi çevrimiçi SSH anahtar oluşturucular, tarayıcınızda güvenli bir şekilde kriptografik anahtar çiftleri oluşturur. SSH anahtarları, genel anahtar (sunucularla paylaşılır) ve özel anahtar (gizli tutulur) olmak üzere iki bölümden oluşur. Parolaların aksine, çevrimiçi oluşturulan SSH anahtarlarını kaba kuvvet saldırılarıyla kırmak neredeyse imkansızdır."
+    },
+    "whyUse": {
+      "title": "Bu Çevrimiçi SSH Anahtar Oluşturucuyu Neden Kullanmalısınız?",
+      "secure": {
+        "title": "Güvenli Çevrimiçi Oluşturma",
+        "desc": "Tüm kriptografik işlemler tarayıcınızda gerçekleşir. Bu çevrimiçi SSH anahtar oluşturucu, özel anahtarlarınızın cihazınızdan asla ayrılmamasını sağlar."
+      },
+      "modern": {
+        "title": "Modern Algoritmalar",
+        "desc": "Ed25519 anahtarları (önerilen) veya 4096-bit'e kadar güçlü RSA anahtarları oluşturun."
+      },
+      "easy": {
+        "title": "Kullanımı Kolay",
+        "desc": "Kopyala/indir düğmeleriyle basit arayüz. Kurulum gerektirmeden anında çalışır."
+      },
+      "free": {
+        "title": "Ücretsiz ve Açık Kaynak",
+        "desc": "Kayıt yok, takip yok, ücret yok. MIT lisanslı ve topluluk tarafından doğrulanmış."
+      }
+    },
+    "howTo": {
+      "title": "Çevrimiçi SSH Anahtarı Nasıl Oluşturulur",
+      "step1": "Algoritma Seçin: Ed25519 (önerilen) veya RSA seçin",
+      "step2": "Açıklama Ekleyin: E-posta gibi isteğe bağlı tanımlayıcı",
+      "step3": "Oluşturun: Anahtar çiftinizi oluşturmak için düğmeye tıklayın",
+      "step4": "Anahtarları Kaydedin: Genel ve özel anahtarlarınızı indirin veya kopyalayın",
+      "step5": "Sunucuya Ekleyin: Genel anahtarı ~/.ssh/authorized_keys veya Git sağlayıcınıza kopyalayın"
+    },
+    "comparison": {
+      "title": "Ed25519 ve RSA Karşılaştırması: Hangisini Seçmelisiniz?",
+      "intro": "Bu iki popüler SSH anahtar algoritması arasındaki farkları anlamak, güvenlik ihtiyaçlarınız için doğru seçimi yapmanıza yardımcı olur.",
+      "feature": "Özellik",
+      "algorithmType": "Algoritma Türü",
+      "keySize": "Anahtar Boyutu",
+      "signatureSize": "İmza Boyutu",
+      "security": "Güvenlik Seviyesi",
+      "performance": "Performans",
+      "compatibility": "Uyumluluk",
+      "quantumResistance": "Kuantum Direnci",
+      "bestFor": "En İyi Kullanım",
+      "recommendation": "Öneri",
+      "ed25519AlgoType": "Eliptik Eğri (Curve25519)",
+      "rsaAlgoType": "Tam Sayı Çarpanlarına Ayırma",
+      "ed25519KeySize": "256 bit (kompakt)",
+      "rsaKeySize": "2048-4096 bit (daha büyük)",
+      "ed25519SigSize": "64 bayt",
+      "rsaSigSize": "256-512 bayt",
+      "ed25519Security": "~128-bit eşdeğeri",
+      "rsaSecurity": "~112-128-bit (4096)",
+      "ed25519Performance": "Çok Hızlı (10 kat daha hızlı)",
+      "rsaPerformance": "Daha yavaş oluşturma",
+      "ed25519Compat": "OpenSSH 6.5+ (2014)",
+      "rsaCompat": "Evrensel (tüm sistemler)",
+      "ed25519Quantum": "Kuantum güvenli değil",
+      "rsaQuantum": "Kuantum güvenli değil",
+      "ed25519BestFor": "GitHub, GitLab, modern sunucular",
+      "rsaBestFor": "Eski sistemler, eski donanım",
+      "ed25519Rec": "Çoğu kullanıcı için en iyi seçim",
+      "rsaRec": "Eski sistem desteği için kullanın"
+    },
+    "useCases": {
+      "title": "Yaygın SSH Anahtar Kullanım Alanları",
+      "git": {
+        "title": "Git Barındırma",
+        "desc": "GitHub, GitLab, Bitbucket'tan parola girmeden güvenli bir şekilde kod gönderin ve çekin."
+      },
+      "server": {
+        "title": "Sunucu Erişimi",
+        "desc": "Linux/Unix sunucularına, bulut sunucularına (AWS, GCP, Azure) ve VPS sağlayıcılarına SSH ile bağlanın."
+      },
+      "automation": {
+        "title": "CI/CD Otomasyonu",
+        "desc": "Otomatik dağıtımlar, betikler ve DevOps iş akışlarının uzak kaynaklara erişmesini sağlayın."
+      },
+      "tunnels": {
+        "title": "Güvenli Tüneller",
+        "desc": "Veritabanı erişimi, port yönlendirme ve güvenli iletişim için şifreli tüneller oluşturun."
+      }
+    },
+    "faq": {
+      "title": "Sıkça Sorulan Sorular",
+      "subtitle": "SSH anahtarları ve bu araç hakkında sık sorulan soruların yanıtlarını bulun.",
+      "safe": {
+        "question": "Çevrimiçi SSH anahtarı oluşturmak güvenli mi?",
+        "answer": "Evet, bu araç %100 güvenlidir çünkü tüm anahtar oluşturma işlemi Web Crypto API kullanılarak tamamen tarayıcınızda gerçekleşir. Özel anahtarlarınız cihazınızdan asla ayrılmaz ve herhangi bir sunucuya iletilmez. Kaynak kodu açık kaynaktır ve GitHub'da denetlenebilir."
+      },
+      "ed25519VsRsa": {
+        "question": "Ed25519 ve RSA arasındaki fark nedir?",
+        "answer": "Ed25519, daha küçük anahtar boyutlarıyla (256-bit ve 2048-4096-bit RSA) daha iyi güvenlik sunan modern bir eliptik eğri algoritmasıdır. Ed25519 anahtarları oluşturmak ve kullanmak daha hızlıdır ve çoğu yeni SSH kurulumu için önerilir. RSA daha eskidir ancak eski sistemlerle daha geniş uyumluluğa sahiptir."
+      },
+      "github": {
+        "question": "SSH anahtarımı GitHub'a nasıl eklerim?",
+        "answer": "1) Bu araçla SSH anahtarınızı oluşturun, 2) Genel anahtarı kopyalayın, 3) GitHub Ayarları > SSH ve GPG anahtarları bölümüne gidin, 4) 'Yeni SSH anahtarı'na tıklayın, 5) Genel anahtarınızı yapıştırın ve bir başlık verin, 6) 'SSH anahtarı ekle'ye tıklayın. Test için: ssh -T git@github.com"
+      },
+      "rsaKeySize": {
+        "question": "RSA için hangi anahtar boyutunu kullanmalıyım?",
+        "answer": "RSA anahtarları için maksimum güvenlik için 4096-bit önerilir. 2048-bit kabul edilebilir minimum boyuttur ve çoğu amaç için yeterli güvenlik sunar. 2048-bit'ten küçük anahtarlar güvensiz kabul edilir ve kullanılmamalıdır."
+      },
+      "offline": {
+        "question": "Bu SSH anahtar oluşturucuyu çevrimdışı kullanabilir miyim?",
+        "answer": "Evet! Bu SSH anahtar oluşturucu, çevrimdışı çalışan bir PWA'dır. İlk ziyaretinizden sonra, cihazınıza uygulama olarak yükleyebilir ve internet bağlantısı olmadan SSH anahtarları oluşturabilirsiniz. Tüm kriptografik işlemler tarayıcınızda yerel olarak çalışır."
+      },
+      "passphrase": {
+        "question": "SSH anahtarım için parola kullanmalı mıyım?",
+        "answer": "Evet, parola kullanmak şiddetle tavsiye edilir. Parola ekstra bir güvenlik katmanı ekler - birisi özel anahtar dosyanıza erişse bile parola olmadan kullanamaz. Önemli anahtarlar için güçlü ve akılda kalıcı bir parola kullanın."
+      },
+      "multipleServers": {
+        "question": "Aynı SSH anahtarını birden fazla sunucuda kullanabilir miyim?",
+        "answer": "Evet, aynı SSH genel anahtarını birden fazla sunucuda kullanabilirsiniz. Ancak daha iyi güvenlik uygulamaları için farklı amaçlar için farklı anahtarlar kullanmayı düşünün (örn. iş ve kişisel, üretim ve geliştirme). Bu, bir anahtar ele geçirilirse riski sınırlar."
+      },
+      "fingerprint": {
+        "question": "SSH anahtar parmak izi nedir?",
+        "answer": "SSH anahtar parmak izi, bir hash fonksiyonu (SHA256 veya MD5) kullanılarak genel anahtarınızdan türetilen kısa ve benzersiz bir tanımlayıcıdır. Sunuculara bağlanırken anahtar doğruluğunu doğrulamak için kullanılır. Parmak izi, doğru sunucuya bağlandığınızı onaylamanıza yardımcı olur."
+      },
+      "bestAlgorithm": {
+        "question": "2025'te en iyi SSH anahtar algoritması hangisidir?",
+        "answer": "Ed25519, 2025'te çoğu kullanım için önerilen algoritmadır. 256-bit anahtar boyutuyla mükemmel güvenlik, hızlı performans sunar ve tüm modern SSH uygulamaları tarafından desteklenir. Yalnızca eski sistemlerle uyumluluk gerekiyorsa RSA kullanın."
+      },
+      "authorizedKeys": {
+        "question": "authorized_keys dosyası nedir?",
+        "answer": "authorized_keys dosyası (Linux/macOS sunucularında ~/.ssh/authorized_keys konumunda bulunur), o hesaba bağlanmasına izin verilen genel anahtarların listesini içerir. Her satır bir genel anahtardır. Parolasız SSH girişini etkinleştirmek için genel anahtarınızı bu dosyaya ekleyin."
+      },
+      "bestOnlineGenerator": {
+        "question": "En iyi çevrimiçi SSH anahtar oluşturucu hangisidir?",
+        "answer": "Bu SSH anahtar oluşturucu, tarayıcınızda %100 çalıştığı, modern Ed25519 ve RSA algoritmalarını desteklediği, PWA olarak çevrimdışı çalıştığı ve özel anahtarlarınızı asla herhangi bir sunucuya göndermediği için en iyi ücretsiz çevrimiçi seçeneklerden biridir."
+      },
+      "permissions": {
+        "question": "SSH özel anahtarım hangi izinlere sahip olmalı?",
+        "answer": "SSH özel anahtarınız kısıtlı izinlere sahip olmalıdır. Linux/macOS'ta 'chmod 600 ~/.ssh/id_ed25519' (sahip okuma/yazma) veya 'chmod 400' (yalnızca sahip okuma) kullanın. SSH, geniş izinlere sahip bir anahtarı kullanmayı reddeder. .ssh dizini 700 olmalıdır."
+      }
+    }
+  },
+  "theme": {
+    "light": "Açık",
+    "dark": "Koyu",
+    "system": "Sistem"
+  },
+  "notFound": {
+    "title": "Sayfa Bulunamadı",
+    "code": "404",
+    "description": "Aradığınız sayfa mevcut değil veya taşınmış.",
+    "backHome": "Ana Sayfaya Dön"
+  }
+}

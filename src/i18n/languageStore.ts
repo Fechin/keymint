@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 
-export type Language = 'en' | 'zh' | 'zh-Hant' | 'ja' | 'ko' | 'es' | 'pt' | 'fr' | 'de' | 'ru' | 'it' | 'nl' | 'pl'
+export type Language = 'en' | 'zh' | 'zh-Hant' | 'ja' | 'ko' | 'es' | 'pt' | 'fr' | 'de' | 'ru' | 'it' | 'nl' | 'pl' | 'sv' | 'he' | 'da' | 'nb' | 'hi' | 'vi' | 'tr' | 'id'
 
 interface LanguageState {
   language: Language
@@ -23,6 +23,14 @@ const detectLanguageFromPath = (): Language | null => {
   if (path.startsWith('/it')) return 'it'
   if (path.startsWith('/nl')) return 'nl'
   if (path.startsWith('/pl')) return 'pl'
+  if (path.startsWith('/sv')) return 'sv'
+  if (path.startsWith('/he')) return 'he'
+  if (path.startsWith('/da')) return 'da'
+  if (path.startsWith('/nb')) return 'nb'
+  if (path.startsWith('/hi')) return 'hi'
+  if (path.startsWith('/vi')) return 'vi'
+  if (path.startsWith('/tr')) return 'tr'
+  if (path.startsWith('/id')) return 'id'
   return null
 }
 
@@ -50,6 +58,14 @@ const detectBrowserLanguage = (): Language => {
   if (langParam === 'it') return 'it'
   if (langParam === 'nl') return 'nl'
   if (langParam === 'pl') return 'pl'
+  if (langParam === 'sv') return 'sv'
+  if (langParam === 'he') return 'he'
+  if (langParam === 'da') return 'da'
+  if (langParam === 'nb' || langParam === 'no' || langParam === 'nn') return 'nb'
+  if (langParam === 'hi') return 'hi'
+  if (langParam === 'vi') return 'vi'
+  if (langParam === 'tr') return 'tr'
+  if (langParam === 'id') return 'id'
   if (langParam === 'en') return 'en'
 
   // Then check browser language
@@ -66,6 +82,14 @@ const detectBrowserLanguage = (): Language => {
   if (browserLang.startsWith('it')) return 'it'
   if (browserLang.startsWith('nl')) return 'nl'
   if (browserLang.startsWith('pl')) return 'pl'
+  if (browserLang.startsWith('sv')) return 'sv'
+  if (browserLang.startsWith('he')) return 'he'
+  if (browserLang.startsWith('da')) return 'da'
+  if (browserLang.startsWith('nb') || browserLang.startsWith('nn') || browserLang === 'no') return 'nb'
+  if (browserLang.startsWith('hi')) return 'hi'
+  if (browserLang.startsWith('vi')) return 'vi'
+  if (browserLang.startsWith('tr')) return 'tr'
+  if (browserLang.startsWith('id')) return 'id'
 
   return 'en'
 }
@@ -79,7 +103,7 @@ const getStoredLanguage = (): Language => {
 
   try {
     const stored = localStorage.getItem('ssh-key-generator-language')
-    if (stored && ['en', 'zh', 'zh-Hant', 'ja', 'ko', 'es', 'pt', 'fr', 'de', 'ru', 'it', 'nl', 'pl'].includes(stored)) {
+    if (stored && ['en', 'zh', 'zh-Hant', 'ja', 'ko', 'es', 'pt', 'fr', 'de', 'ru', 'it', 'nl', 'pl', 'sv', 'he', 'da', 'nb', 'hi', 'vi', 'tr', 'id'].includes(stored)) {
       return stored as Language
     }
   } catch {
@@ -102,9 +126,19 @@ const applyLanguage = (language: Language) => {
     'ru': 'ru',
     'it': 'it',
     'nl': 'nl',
-    'pl': 'pl'
+    'pl': 'pl',
+    'sv': 'sv',
+    'he': 'he',
+    'da': 'da',
+    'nb': 'nb',
+    'hi': 'hi',
+    'vi': 'vi',
+    'tr': 'tr',
+    'id': 'id'
   }
   document.documentElement.lang = langMap[language]
+  // RTL support for Hebrew
+  document.documentElement.dir = language === 'he' ? 'rtl' : 'ltr'
 }
 
 const initialLanguage = getStoredLanguage()
@@ -151,7 +185,15 @@ export const getLanguageBasePath = (language: Language): string => {
     'ru': '/ru',
     'it': '/it',
     'nl': '/nl',
-    'pl': '/pl'
+    'pl': '/pl',
+    'sv': '/sv',
+    'he': '/he',
+    'da': '/da',
+    'nb': '/nb',
+    'hi': '/hi',
+    'vi': '/vi',
+    'tr': '/tr',
+    'id': '/id'
   }
   return paths[language]
 }

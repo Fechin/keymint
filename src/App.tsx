@@ -135,7 +135,15 @@ function updateCanonical(lang: Language) {
     'ru': '/ru/',
     'it': '/it/',
     'nl': '/nl/',
-    'pl': '/pl/'
+    'pl': '/pl/',
+    'sv': '/sv/',
+    'he': '/he/',
+    'da': '/da/',
+    'nb': '/nb/',
+    'hi': '/hi/',
+    'vi': '/vi/',
+    'tr': '/tr/',
+    'id': '/id/'
   }
 
   if (canonical) {
@@ -212,6 +220,38 @@ function App() {
       {/* Polish route */}
       <Route path="/pl/*" element={<LanguageRoute lang="pl" />} />
       <Route path="/pl" element={<LanguageRoute lang="pl" />} />
+
+      {/* Swedish route */}
+      <Route path="/sv/*" element={<LanguageRoute lang="sv" />} />
+      <Route path="/sv" element={<LanguageRoute lang="sv" />} />
+
+      {/* Hebrew route */}
+      <Route path="/he/*" element={<LanguageRoute lang="he" />} />
+      <Route path="/he" element={<LanguageRoute lang="he" />} />
+
+      {/* Danish route */}
+      <Route path="/da/*" element={<LanguageRoute lang="da" />} />
+      <Route path="/da" element={<LanguageRoute lang="da" />} />
+
+      {/* Norwegian Bokmål route */}
+      <Route path="/nb/*" element={<LanguageRoute lang="nb" />} />
+      <Route path="/nb" element={<LanguageRoute lang="nb" />} />
+
+      {/* Hindi route */}
+      <Route path="/hi/*" element={<LanguageRoute lang="hi" />} />
+      <Route path="/hi" element={<LanguageRoute lang="hi" />} />
+
+      {/* Vietnamese route */}
+      <Route path="/vi/*" element={<LanguageRoute lang="vi" />} />
+      <Route path="/vi" element={<LanguageRoute lang="vi" />} />
+
+      {/* Turkish route */}
+      <Route path="/tr/*" element={<LanguageRoute lang="tr" />} />
+      <Route path="/tr" element={<LanguageRoute lang="tr" />} />
+
+      {/* Indonesian route */}
+      <Route path="/id/*" element={<LanguageRoute lang="id" />} />
+      <Route path="/id" element={<LanguageRoute lang="id" />} />
 
       {/* English route (default) */}
       <Route path="/" element={<LanguageRoute lang="en" />} />

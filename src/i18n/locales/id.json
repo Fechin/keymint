@@ -1,0 +1,342 @@
+{
+  "header": {
+    "title": "Generator Kunci SSH",
+    "subtitle": "Gratis & Aman",
+    "clientSide": "100% Sisi Klien",
+    "viewOnGitHub": "Lihat di GitHub"
+  },
+  "hero": {
+    "title": "Generator Kunci SSH Online",
+    "subtitle": "Buat kunci SSH yang aman secara instan di browser Anda dengan generator kunci SSH gratis ini. Kompatibel dengan GitHub, GitLab, Bitbucket, dan semua server SSH."
+  },
+  "tabs": {
+    "generate": "Buat Kunci",
+    "generateShort": "Buat",
+    "commands": "Mode Perintah",
+    "commandsShort": "Perintah",
+    "config": "Konfigurasi SSH",
+    "configShort": "Konfig",
+    "guides": "Panduan Platform",
+    "guidesShort": "Panduan"
+  },
+  "generator": {
+    "title": "Generator Kunci SSH Online",
+    "description": "Buat pasangan kunci SSH baru dengan aman di browser Anda menggunakan generator gratis ini. Tidak ada data yang dikirim ke server manapun.",
+    "algorithm": "Algoritma",
+    "algorithmTooltip": "Ed25519 direkomendasikan untuk sebagian besar kasus. Gunakan RSA jika Anda memerlukan kompatibilitas dengan sistem lama.",
+    "comment": "Komentar (opsional)",
+    "commentTooltip": "Komentar untuk membantu mengidentifikasi kunci ini. Biasanya alamat email Anda.",
+    "commentPlaceholder": "pengguna@contoh.com",
+    "generateButton": "Buat Pasangan Kunci",
+    "generating": "Membuat...",
+    "passphrase": "Frasa Sandi (opsional)",
+    "passphraseTooltip": "Frasa sandi menambahkan keamanan ekstra. Meskipun seseorang mendapatkan kunci privat Anda, mereka tidak bisa menggunakannya tanpa frasa sandi.",
+    "passphrasePlaceholder": "Masukkan frasa sandi untuk enkripsi",
+    "confirmPassphrase": "Konfirmasi Frasa Sandi",
+    "confirmPassphrasePlaceholder": "Masukkan ulang frasa sandi",
+    "passphrasesMismatch": "Frasa sandi tidak cocok",
+    "noPassphraseWarning": "Frasa sandi tidak diatur. Kunci privat Anda akan tidak terenkripsi. Pertimbangkan untuk menambahkan frasa sandi demi keamanan ekstra.",
+    "securityTitle": "Generator Kunci SSH 100% Sisi Klien",
+    "securityDesc": "Semua pembuatan kunci terjadi secara lokal di browser Anda. Generator kunci SSH online ini tidak pernah mengirimkan kunci privat Anda.",
+    "noKeysYet": "Belum ada kunci yang dibuat",
+    "noKeysHint": "Klik \"Buat Pasangan Kunci\" untuk membuat kunci SSH Anda"
+  },
+  "algorithms": {
+    "ed25519": "Ed25519 (Direkomendasikan)",
+    "ed25519Desc": "Modern, cepat, aman. Terbaik untuk sebagian besar kebutuhan.",
+    "rsa4096": "RSA 4096-bit",
+    "rsa4096Desc": "Kompatibilitas maksimum dengan sistem lama.",
+    "rsa2048": "RSA 2048-bit",
+    "rsa2048Desc": "Ukuran RSA minimum yang direkomendasikan untuk kompatibilitas."
+  },
+  "keyDisplay": {
+    "publicKey": "Kunci Publik",
+    "publicKeyDesc": "Tambahkan ini ke authorized_keys di server remote atau ke GitHub/GitLab.",
+    "privateKey": "Kunci Privat",
+    "privateKeyWarning": "Jaga kerahasiaannya! Jangan pernah membagikan kunci privat Anda.",
+    "fingerprint": "Sidik Jari Kunci",
+    "copy": "Salin",
+    "copied": "Tersalin!",
+    "download": "Unduh",
+    "reveal": "Tampilkan",
+    "hide": "Sembunyikan",
+    "clickToReveal": "Klik Tampilkan untuk melihat kunci privat"
+  },
+  "commands": {
+    "title": "Perintah Pembuatan Kunci SSH",
+    "description": "Buat perintah ssh-keygen untuk platform pilihan Anda. Salin dan jalankan di terminal Anda.",
+    "algorithm": "Algoritma",
+    "comment": "Komentar",
+    "filename": "Nama File (opsional)",
+    "quickCommand": "Perintah Cepat",
+    "completeSetup": "Pengaturan Lengkap",
+    "copyAll": "Salin Semua"
+  },
+  "sshConfig": {
+    "title": "Pembuat Konfigurasi SSH",
+    "description": "Buat file ~/.ssh/config Anda. Tambahkan host dan unduh konfigurasinya.",
+    "hostAlias": "Alias Host",
+    "hostAliasRequired": "Alias Host *",
+    "hostname": "HostName",
+    "hostnameRequired": "HostName *",
+    "hostnamePlaceholder": "192.168.1.100 atau contoh.com",
+    "user": "Pengguna",
+    "port": "Port",
+    "identityFile": "IdentityFile",
+    "identityFilePlaceholder": "~/.ssh/id_ed25519",
+    "addHost": "Tambah Host",
+    "configuredHosts": "Host Terkonfigurasi",
+    "generatedConfig": "Konfigurasi yang Dihasilkan",
+    "saveToPath": "Simpan ini ke ~/.ssh/config",
+    "noHosts": "# Belum ada host yang dikonfigurasi",
+    "advancedOptions": "Opsi Lanjutan",
+    "proxyJump": "ProxyJump",
+    "proxyJumpPlaceholder": "bastion-host",
+    "proxyJumpDesc": "Lompat melalui host bastion/jump untuk mencapai target",
+    "forwardAgent": "Forward Agent",
+    "forwardAgentDesc": "Teruskan SSH agent Anda ke host remote"
+  },
+  "guides": {
+    "title": "Panduan Pengaturan Platform",
+    "description": "Petunjuk langkah demi langkah untuk mengatur kunci SSH di platform Git populer.",
+    "officialDocs": "Dokumentasi Resmi",
+    "sshSetup": "Pengaturan SSH {platform}",
+    "github": {
+      "step1Title": "Buat Kunci SSH",
+      "step1Desc": "Gunakan generator di atas atau jalankan perintah ini:",
+      "step2Title": "Mulai SSH Agent",
+      "step2Desc": "Mulai ssh-agent di latar belakang:",
+      "step3Title": "Tambahkan Kunci ke Agent",
+      "step3Desc": "Tambahkan kunci privat SSH Anda ke agent:",
+      "step4Title": "Salin Kunci Publik",
+      "step4Desc": "Salin kunci publik Anda ke clipboard:",
+      "step5Title": "Tambahkan ke GitHub",
+      "step5Desc": "Buka GitHub Settings > SSH and GPG keys > New SSH key. Tempelkan kunci publik Anda.",
+      "step6Title": "Uji Koneksi",
+      "step6Desc": "Verifikasi koneksi SSH Anda:"
+    },
+    "gitlab": {
+      "step1Title": "Buat Kunci SSH",
+      "step1Desc": "Gunakan Ed25519 untuk keamanan yang lebih baik:",
+      "step2Title": "Tambahkan Kunci ke Agent",
+      "step2Desc": "Tambahkan kunci SSH Anda ke agent:",
+      "step3Title": "Salin Kunci Publik",
+      "step3Desc": "Salin kunci publik Anda:",
+      "step4Title": "Tambahkan ke GitLab",
+      "step4Desc": "Buka GitLab Preferences > SSH Keys. Tempelkan kunci publik Anda dan atur tanggal kedaluwarsa.",
+      "step5Title": "Uji Koneksi",
+      "step5Desc": "Verifikasi koneksi SSH Anda:"
+    },
+    "bitbucket": {
+      "step1Title": "Buat Kunci SSH",
+      "step1Desc": "Buat kunci SSH Ed25519:",
+      "step2Title": "Tambahkan Kunci ke Agent",
+      "step2Desc": "Mulai ssh-agent dan tambahkan kunci Anda:",
+      "step3Title": "Salin Kunci Publik",
+      "step3Desc": "Salin kunci publik Anda ke clipboard:",
+      "step4Title": "Tambahkan ke Bitbucket",
+      "step4Desc": "Buka Bitbucket Settings > Personal settings > SSH keys > Add key.",
+      "step5Title": "Uji Koneksi",
+      "step5Desc": "Verifikasi koneksi SSH Anda:"
+    },
+    "aws": {
+      "step1Title": "Buat Kunci SSH",
+      "step1Desc": "Buat kunci SSH Ed25519 untuk AWS EC2:",
+      "step2Title": "Salin Kunci Publik",
+      "step2Desc": "Tampilkan kunci publik Anda untuk disalin:",
+      "step3Title": "Impor Kunci ke AWS",
+      "step3Desc": "Buka AWS Console > EC2 > Key Pairs > Actions > Import Key Pair. Tempelkan kunci publik Anda.",
+      "step4Title": "Atur Izin",
+      "step4Desc": "Pastikan kunci privat Anda memiliki izin yang tepat:",
+      "step5Title": "Hubungkan ke Instance",
+      "step5Desc": "SSH ke instance EC2 Anda (ganti dengan detail Anda):"
+    },
+    "azure": {
+      "step1Title": "Buat Kunci SSH",
+      "step1Desc": "Buat kunci SSH Ed25519 untuk Azure:",
+      "step2Title": "Salin Kunci Publik",
+      "step2Desc": "Tampilkan kunci publik Anda:",
+      "step3Title": "Tambahkan Saat Membuat VM",
+      "step3Desc": "Saat membuat VM, pilih 'SSH public key' untuk autentikasi dan tempelkan kunci publik Anda.",
+      "step4Title": "Hubungkan ke VM",
+      "step4Desc": "SSH ke VM Azure Anda:",
+      "step5Title": "Perbarui VM yang Ada (Opsional)",
+      "step5Desc": "Tambahkan kunci ke VM yang ada menggunakan Azure CLI:"
+    },
+    "digitalocean": {
+      "step1Title": "Buat Kunci SSH",
+      "step1Desc": "Buat kunci SSH Ed25519:",
+      "step2Title": "Salin Kunci Publik",
+      "step2Desc": "Tampilkan kunci publik Anda untuk disalin:",
+      "step3Title": "Tambahkan ke DigitalOcean",
+      "step3Desc": "Buka DigitalOcean Control Panel > Settings > Security > SSH Keys > Add SSH Key.",
+      "step4Title": "Buat Droplet",
+      "step4Desc": "Saat membuat Droplet, pilih kunci SSH Anda di bagian 'Authentication'.",
+      "step5Title": "Hubungkan ke Droplet",
+      "step5Desc": "SSH ke Droplet Anda:"
+    }
+  },
+  "footer": {
+    "about": "Tentang Generator Kunci SSH Online Ini",
+    "aboutDesc": "Ini adalah generator kunci SSH online gratis dan open source yang berjalan sepenuhnya di browser Anda. Tidak ada pemrosesan sisi server, tidak ada pengumpulan data - hanya pembuatan kunci yang aman.",
+    "securityFirst": "Keamanan Utama",
+    "security1": "Semua pembuatan kunci terjadi di browser Anda",
+    "security2": "Tidak ada data yang pernah dikirim ke server manapun",
+    "security3": "Kode sumber terbuka dan dapat diaudit",
+    "security4": "Menggunakan pustaka kriptografi standar industri",
+    "resources": "Sumber Daya",
+    "sshKeyGuide": "Dokumentasi SSH GitHub",
+    "githubSetup": "Dokumentasi SSH GitLab",
+    "bestPractices": "SSH Academy",
+    "madeWith": "Dibuat dengan",
+    "forDevelopers": "untuk pengembang di seluruh dunia",
+    "copyright": "© {year} SSH Key Generator. Sumber terbuka di bawah Lisensi MIT."
+  },
+  "seo": {
+    "whatIs": {
+      "title": "Apa itu Generator Kunci SSH Online?",
+      "desc": "Generator kunci SSH online seperti alat ini membuat pasangan kunci kriptografi dengan aman di browser Anda. Kunci SSH terdiri dari kunci publik (dibagikan ke server) dan kunci privat (dijaga kerahasiaannya). Tidak seperti kata sandi, kunci SSH yang dibuat secara online hampir tidak mungkin diretas melalui serangan brute force."
+    },
+    "whyUse": {
+      "title": "Mengapa Menggunakan Generator Kunci SSH Online Ini?",
+      "secure": {
+        "title": "Pembuatan Online yang Aman",
+        "desc": "Semua operasi kriptografi terjadi di browser Anda. Generator kunci SSH online ini memastikan kunci privat Anda tidak pernah meninggalkan perangkat Anda."
+      },
+      "modern": {
+        "title": "Algoritma Modern",
+        "desc": "Buat kunci Ed25519 (direkomendasikan) atau kunci RSA dengan kekuatan hingga 4096-bit."
+      },
+      "easy": {
+        "title": "Mudah Digunakan",
+        "desc": "Antarmuka sederhana dengan tombol salin/unduh. Berfungsi langsung tanpa instalasi."
+      },
+      "free": {
+        "title": "Gratis & Sumber Terbuka",
+        "desc": "Tanpa registrasi, tanpa pelacakan, tanpa biaya. Berlisensi MIT dan diverifikasi komunitas."
+      }
+    },
+    "howTo": {
+      "title": "Cara Membuat Kunci SSH Online",
+      "step1": "Pilih Algoritma: Pilih Ed25519 (direkomendasikan) atau RSA",
+      "step2": "Tambahkan Komentar: Pengidentifikasi opsional seperti email Anda",
+      "step3": "Buat: Klik tombol untuk membuat pasangan kunci Anda",
+      "step4": "Simpan Kunci: Unduh atau salin kunci publik dan privat Anda",
+      "step5": "Tambahkan ke Server: Salin kunci publik ke ~/.ssh/authorized_keys atau penyedia Git Anda"
+    },
+    "comparison": {
+      "title": "Ed25519 vs RSA: Mana yang Harus Anda Pilih?",
+      "intro": "Memahami perbedaan antara dua algoritma kunci SSH populer ini membantu Anda membuat pilihan yang tepat untuk kebutuhan keamanan Anda.",
+      "feature": "Fitur",
+      "algorithmType": "Jenis Algoritma",
+      "keySize": "Ukuran Kunci",
+      "signatureSize": "Ukuran Tanda Tangan",
+      "security": "Tingkat Keamanan",
+      "performance": "Performa",
+      "compatibility": "Kompatibilitas",
+      "quantumResistance": "Ketahanan Kuantum",
+      "bestFor": "Terbaik Untuk",
+      "recommendation": "Rekomendasi",
+      "ed25519AlgoType": "Kurva Eliptik (Curve25519)",
+      "rsaAlgoType": "Faktorisasi Integer",
+      "ed25519KeySize": "256 bit (ringkas)",
+      "rsaKeySize": "2048-4096 bit (lebih besar)",
+      "ed25519SigSize": "64 byte",
+      "rsaSigSize": "256-512 byte",
+      "ed25519Security": "Setara ~128-bit",
+      "rsaSecurity": "~112-128-bit (4096)",
+      "ed25519Performance": "Sangat Cepat (10x lebih cepat)",
+      "rsaPerformance": "Pembuatan lebih lambat",
+      "ed25519Compat": "OpenSSH 6.5+ (2014)",
+      "rsaCompat": "Universal (semua sistem)",
+      "ed25519Quantum": "Tidak tahan kuantum",
+      "rsaQuantum": "Tidak tahan kuantum",
+      "ed25519BestFor": "GitHub, GitLab, server modern",
+      "rsaBestFor": "Sistem lama, perangkat keras lama",
+      "ed25519Rec": "Pilihan terbaik untuk sebagian besar pengguna",
+      "rsaRec": "Gunakan untuk dukungan sistem lama"
+    },
+    "useCases": {
+      "title": "Kasus Penggunaan Kunci SSH Umum",
+      "git": {
+        "title": "Hosting Git",
+        "desc": "Push dan pull kode dengan aman dari GitHub, GitLab, Bitbucket tanpa memasukkan kata sandi."
+      },
+      "server": {
+        "title": "Akses Server",
+        "desc": "SSH ke server Linux/Unix, instance cloud (AWS, GCP, Azure), dan penyedia VPS."
+      },
+      "automation": {
+        "title": "Otomatisasi CI/CD",
+        "desc": "Aktifkan deployment otomatis, skrip, dan pipeline DevOps untuk mengakses sumber daya remote."
+      },
+      "tunnels": {
+        "title": "Terowongan Aman",
+        "desc": "Buat terowongan terenkripsi untuk akses database, port forwarding, dan komunikasi aman."
+      }
+    },
+    "faq": {
+      "title": "Pertanyaan yang Sering Diajukan",
+      "subtitle": "Temukan jawaban atas pertanyaan umum tentang kunci SSH dan alat ini.",
+      "safe": {
+        "question": "Apakah aman membuat kunci SSH secara online?",
+        "answer": "Ya, alat ini 100% aman karena semua pembuatan kunci terjadi sepenuhnya di browser Anda menggunakan Web Crypto API. Kunci privat Anda tidak pernah meninggalkan perangkat Anda dan tidak pernah dikirim ke server manapun. Kode sumbernya open source dan dapat diaudit di GitHub."
+      },
+      "ed25519VsRsa": {
+        "question": "Apa perbedaan antara Ed25519 dan RSA?",
+        "answer": "Ed25519 adalah algoritma kurva eliptik modern yang menawarkan keamanan lebih baik dengan ukuran kunci lebih kecil (256-bit vs 2048-4096-bit RSA). Kunci Ed25519 lebih cepat untuk dibuat dan digunakan, dan direkomendasikan untuk sebagian besar pengaturan SSH baru. RSA lebih lama tetapi memiliki kompatibilitas lebih luas dengan sistem lama."
+      },
+      "github": {
+        "question": "Bagaimana cara menambahkan kunci SSH ke GitHub?",
+        "answer": "1) Buat kunci SSH Anda menggunakan alat ini, 2) Salin kunci publik, 3) Buka GitHub Settings > SSH and GPG keys, 4) Klik 'New SSH key', 5) Tempelkan kunci publik Anda dan beri judul, 6) Klik 'Add SSH key'. Uji dengan: ssh -T git@github.com"
+      },
+      "rsaKeySize": {
+        "question": "Berapa ukuran kunci yang harus saya gunakan untuk RSA?",
+        "answer": "Untuk kunci RSA, 4096-bit direkomendasikan untuk keamanan maksimum. 2048-bit adalah ukuran minimum yang dapat diterima dan menawarkan keamanan yang memadai untuk sebagian besar keperluan. Kunci yang lebih kecil dari 2048-bit dianggap tidak aman dan tidak boleh digunakan."
+      },
+      "offline": {
+        "question": "Bisakah saya menggunakan generator kunci SSH ini secara offline?",
+        "answer": "Ya! Generator kunci SSH ini adalah Progressive Web App (PWA) yang berfungsi secara offline. Setelah kunjungan pertama Anda, Anda dapat menginstalnya sebagai aplikasi di perangkat Anda dan membuat kunci SSH tanpa koneksi internet. Semua operasi kriptografi berjalan secara lokal di browser Anda."
+      },
+      "passphrase": {
+        "question": "Haruskah saya menggunakan frasa sandi untuk kunci SSH saya?",
+        "answer": "Ya, menggunakan frasa sandi sangat direkomendasikan. Frasa sandi menambahkan lapisan keamanan ekstra - meskipun seseorang mendapatkan akses ke file kunci privat Anda, mereka tidak dapat menggunakannya tanpa frasa sandi. Gunakan frasa sandi yang kuat dan mudah diingat untuk kunci-kunci penting."
+      },
+      "multipleServers": {
+        "question": "Bisakah saya menggunakan kunci SSH yang sama untuk beberapa server?",
+        "answer": "Ya, Anda dapat menggunakan kunci publik SSH yang sama di beberapa server. Namun, untuk praktik keamanan yang lebih baik, pertimbangkan untuk menggunakan kunci yang berbeda untuk tujuan yang berbeda (misalnya, kerja vs pribadi, produksi vs pengembangan). Ini membatasi paparan jika satu kunci terkompromi."
+      },
+      "fingerprint": {
+        "question": "Apa itu sidik jari kunci SSH?",
+        "answer": "Sidik jari kunci SSH adalah pengidentifikasi singkat dan unik yang diturunkan dari kunci publik Anda menggunakan fungsi hash (SHA256 atau MD5). Ini digunakan untuk memverifikasi keaslian kunci saat terhubung ke server. Sidik jari membantu Anda memastikan bahwa Anda terhubung ke server yang benar."
+      },
+      "bestAlgorithm": {
+        "question": "Apa algoritma kunci SSH terbaik di tahun 2025?",
+        "answer": "Ed25519 adalah algoritma yang direkomendasikan di tahun 2025 untuk sebagian besar kasus penggunaan. Ini memberikan keamanan yang sangat baik dengan ukuran kunci 256-bit, performa cepat, dan didukung oleh semua implementasi SSH modern. Gunakan RSA hanya jika Anda memerlukan kompatibilitas dengan sistem lama."
+      },
+      "authorizedKeys": {
+        "question": "Apa itu file authorized_keys?",
+        "answer": "File authorized_keys (terletak di ~/.ssh/authorized_keys pada server Linux/macOS) berisi daftar kunci publik yang diizinkan untuk terhubung ke akun tersebut. Setiap baris adalah satu kunci publik. Tambahkan kunci publik Anda ke file ini untuk mengaktifkan login SSH tanpa kata sandi."
+      },
+      "bestOnlineGenerator": {
+        "question": "Apa generator kunci SSH online terbaik?",
+        "answer": "Generator kunci SSH ini adalah salah satu opsi online gratis terbaik karena berjalan 100% di browser Anda, mendukung algoritma Ed25519 dan RSA modern, berfungsi offline sebagai PWA, dan tidak pernah mengirim kunci privat Anda ke server manapun."
+      },
+      "permissions": {
+        "question": "Izin apa yang harus dimiliki kunci privat SSH saya?",
+        "answer": "Kunci privat SSH Anda harus memiliki izin terbatas. Di Linux/macOS, gunakan 'chmod 600 ~/.ssh/id_ed25519' (baca/tulis pemilik) atau 'chmod 400' (hanya baca pemilik). SSH akan menolak menggunakan kunci dengan izin yang terlalu longgar. Direktori .ssh harus 700."
+      }
+    }
+  },
+  "theme": {
+    "light": "Terang",
+    "dark": "Gelap",
+    "system": "Sistem"
+  },
+  "notFound": {
+    "title": "Halaman Tidak Ditemukan",
+    "code": "404",
+    "description": "Halaman yang Anda cari tidak ada atau telah dipindahkan.",
+    "backHome": "Kembali ke Beranda"
+  }
+}

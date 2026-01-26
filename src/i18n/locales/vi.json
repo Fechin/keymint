@@ -1,0 +1,342 @@
+{
+  "header": {
+    "title": "Tạo khóa SSH",
+    "subtitle": "Miễn phí & Bảo mật",
+    "clientSide": "100% trên trình duyệt",
+    "viewOnGitHub": "Xem trên GitHub"
+  },
+  "hero": {
+    "title": "Tạo khóa SSH trực tuyến",
+    "subtitle": "Tạo khóa SSH an toàn ngay trên trình duyệt với công cụ tạo khóa SSH miễn phí này. Tương thích với GitHub, GitLab, Bitbucket và mọi máy chủ SSH."
+  },
+  "tabs": {
+    "generate": "Tạo khóa",
+    "generateShort": "Tạo",
+    "commands": "Chế độ lệnh",
+    "commandsShort": "Lệnh",
+    "config": "Cấu hình SSH",
+    "configShort": "Cấu hình",
+    "guides": "Hướng dẫn nền tảng",
+    "guidesShort": "Hướng dẫn"
+  },
+  "generator": {
+    "title": "Công cụ tạo khóa SSH trực tuyến",
+    "description": "Tạo cặp khóa SSH mới một cách an toàn ngay trên trình duyệt với công cụ miễn phí này. Không có dữ liệu nào được gửi đến máy chủ.",
+    "algorithm": "Thuật toán",
+    "algorithmTooltip": "Ed25519 được khuyến nghị cho hầu hết các trường hợp. Dùng RSA nếu bạn cần tương thích với các hệ thống cũ.",
+    "comment": "Ghi chú (không bắt buộc)",
+    "commentTooltip": "Ghi chú giúp nhận dạng khóa này. Thường là địa chỉ email của bạn.",
+    "commentPlaceholder": "nguoidung@example.com",
+    "generateButton": "Tạo cặp khóa",
+    "generating": "Đang tạo...",
+    "passphrase": "Mật khẩu bảo vệ (không bắt buộc)",
+    "passphraseTooltip": "Mật khẩu bảo vệ tăng thêm lớp bảo mật. Ngay cả khi ai đó có được khóa bí mật của bạn, họ cũng không thể sử dụng nếu không có mật khẩu này.",
+    "passphrasePlaceholder": "Nhập mật khẩu để mã hóa",
+    "confirmPassphrase": "Xác nhận mật khẩu",
+    "confirmPassphrasePlaceholder": "Nhập lại mật khẩu",
+    "passphrasesMismatch": "Mật khẩu không khớp",
+    "noPassphraseWarning": "Chưa đặt mật khẩu bảo vệ. Khóa bí mật của bạn sẽ không được mã hóa. Hãy cân nhắc thêm mật khẩu để tăng cường bảo mật.",
+    "securityTitle": "Tạo khóa SSH 100% trên trình duyệt",
+    "securityDesc": "Toàn bộ quá trình tạo khóa diễn ra trên trình duyệt của bạn. Công cụ tạo khóa SSH trực tuyến này không bao giờ truyền khóa bí mật của bạn đi đâu.",
+    "noKeysYet": "Chưa có khóa nào được tạo",
+    "noKeysHint": "Nhấn \"Tạo cặp khóa\" để tạo khóa SSH của bạn"
+  },
+  "algorithms": {
+    "ed25519": "Ed25519 (Khuyến nghị)",
+    "ed25519Desc": "Hiện đại, nhanh, an toàn. Tốt nhất cho hầu hết các trường hợp.",
+    "rsa4096": "RSA 4096-bit",
+    "rsa4096Desc": "Tương thích tối đa với các hệ thống cũ.",
+    "rsa2048": "RSA 2048-bit",
+    "rsa2048Desc": "Kích thước RSA tối thiểu được khuyến nghị để đảm bảo tương thích."
+  },
+  "keyDisplay": {
+    "publicKey": "Khóa công khai",
+    "publicKeyDesc": "Thêm khóa này vào authorized_keys trên máy chủ từ xa hoặc vào GitHub/GitLab.",
+    "privateKey": "Khóa bí mật",
+    "privateKeyWarning": "Giữ bí mật! Không bao giờ chia sẻ khóa bí mật của bạn.",
+    "fingerprint": "Dấu vân tay khóa",
+    "copy": "Sao chép",
+    "copied": "Đã sao chép!",
+    "download": "Tải xuống",
+    "reveal": "Hiển thị",
+    "hide": "Ẩn",
+    "clickToReveal": "Nhấn Hiển thị để xem khóa bí mật"
+  },
+  "commands": {
+    "title": "Lệnh tạo khóa SSH",
+    "description": "Tạo lệnh ssh-keygen cho nền tảng bạn muốn. Sao chép và chạy các lệnh này trong terminal.",
+    "algorithm": "Thuật toán",
+    "comment": "Ghi chú",
+    "filename": "Tên tệp (không bắt buộc)",
+    "quickCommand": "Lệnh nhanh",
+    "completeSetup": "Cài đặt đầy đủ",
+    "copyAll": "Sao chép tất cả"
+  },
+  "sshConfig": {
+    "title": "Trình tạo cấu hình SSH",
+    "description": "Xây dựng tệp ~/.ssh/config của bạn. Thêm các máy chủ và tải xuống cấu hình.",
+    "hostAlias": "Bí danh máy chủ",
+    "hostAliasRequired": "Bí danh máy chủ *",
+    "hostname": "Tên máy chủ",
+    "hostnameRequired": "Tên máy chủ *",
+    "hostnamePlaceholder": "192.168.1.100 hoặc example.com",
+    "user": "Tên người dùng",
+    "port": "Cổng",
+    "identityFile": "Tệp định danh",
+    "identityFilePlaceholder": "~/.ssh/id_ed25519",
+    "addHost": "Thêm máy chủ",
+    "configuredHosts": "Các máy chủ đã cấu hình",
+    "generatedConfig": "Cấu hình đã tạo",
+    "saveToPath": "Lưu vào ~/.ssh/config",
+    "noHosts": "# Chưa có máy chủ nào được cấu hình",
+    "advancedOptions": "Tùy chọn nâng cao",
+    "proxyJump": "ProxyJump",
+    "proxyJumpPlaceholder": "may-chu-trung-gian",
+    "proxyJumpDesc": "Kết nối qua máy chủ trung gian để đến máy chủ đích",
+    "forwardAgent": "Chuyển tiếp Agent",
+    "forwardAgentDesc": "Chuyển tiếp SSH agent của bạn đến máy chủ từ xa"
+  },
+  "guides": {
+    "title": "Hướng dẫn thiết lập theo nền tảng",
+    "description": "Hướng dẫn từng bước để thiết lập khóa SSH trên các nền tảng Git phổ biến.",
+    "officialDocs": "Tài liệu chính thức",
+    "sshSetup": "Thiết lập SSH cho {platform}",
+    "github": {
+      "step1Title": "Tạo khóa SSH",
+      "step1Desc": "Sử dụng công cụ tạo khóa ở trên hoặc chạy lệnh này:",
+      "step2Title": "Khởi động SSH Agent",
+      "step2Desc": "Khởi động ssh-agent chạy nền:",
+      "step3Title": "Thêm khóa vào Agent",
+      "step3Desc": "Thêm khóa bí mật SSH vào agent:",
+      "step4Title": "Sao chép khóa công khai",
+      "step4Desc": "Sao chép khóa công khai vào clipboard:",
+      "step5Title": "Thêm vào GitHub",
+      "step5Desc": "Vào GitHub Settings > SSH and GPG keys > New SSH key. Dán khóa công khai của bạn.",
+      "step6Title": "Kiểm tra kết nối",
+      "step6Desc": "Xác nhận kết nối SSH của bạn:"
+    },
+    "gitlab": {
+      "step1Title": "Tạo khóa SSH",
+      "step1Desc": "Sử dụng Ed25519 để bảo mật tốt hơn:",
+      "step2Title": "Thêm khóa vào Agent",
+      "step2Desc": "Thêm khóa SSH vào agent:",
+      "step3Title": "Sao chép khóa công khai",
+      "step3Desc": "Sao chép khóa công khai:",
+      "step4Title": "Thêm vào GitLab",
+      "step4Desc": "Vào GitLab Preferences > SSH Keys. Dán khóa công khai và đặt ngày hết hạn.",
+      "step5Title": "Kiểm tra kết nối",
+      "step5Desc": "Xác nhận kết nối SSH của bạn:"
+    },
+    "bitbucket": {
+      "step1Title": "Tạo khóa SSH",
+      "step1Desc": "Tạo khóa SSH Ed25519:",
+      "step2Title": "Thêm khóa vào Agent",
+      "step2Desc": "Khởi động ssh-agent và thêm khóa:",
+      "step3Title": "Sao chép khóa công khai",
+      "step3Desc": "Sao chép khóa công khai vào clipboard:",
+      "step4Title": "Thêm vào Bitbucket",
+      "step4Desc": "Vào Bitbucket Settings > Personal settings > SSH keys > Add key.",
+      "step5Title": "Kiểm tra kết nối",
+      "step5Desc": "Xác nhận kết nối SSH của bạn:"
+    },
+    "aws": {
+      "step1Title": "Tạo khóa SSH",
+      "step1Desc": "Tạo khóa SSH Ed25519 cho AWS EC2:",
+      "step2Title": "Sao chép khóa công khai",
+      "step2Desc": "Hiển thị khóa công khai để sao chép:",
+      "step3Title": "Nhập khóa vào AWS",
+      "step3Desc": "Vào AWS Console > EC2 > Key Pairs > Actions > Import Key Pair. Dán khóa công khai của bạn.",
+      "step4Title": "Đặt quyền truy cập",
+      "step4Desc": "Đảm bảo khóa bí mật có quyền truy cập phù hợp:",
+      "step5Title": "Kết nối đến Instance",
+      "step5Desc": "SSH vào EC2 instance của bạn (thay thế bằng thông tin của bạn):"
+    },
+    "azure": {
+      "step1Title": "Tạo khóa SSH",
+      "step1Desc": "Tạo khóa SSH Ed25519 cho Azure:",
+      "step2Title": "Sao chép khóa công khai",
+      "step2Desc": "Hiển thị khóa công khai:",
+      "step3Title": "Thêm khi tạo VM",
+      "step3Desc": "Khi tạo VM, chọn 'SSH public key' để xác thực và dán khóa công khai của bạn.",
+      "step4Title": "Kết nối đến VM",
+      "step4Desc": "SSH vào Azure VM của bạn:",
+      "step5Title": "Cập nhật VM hiện có (Tùy chọn)",
+      "step5Desc": "Thêm khóa vào VM hiện có bằng Azure CLI:"
+    },
+    "digitalocean": {
+      "step1Title": "Tạo khóa SSH",
+      "step1Desc": "Tạo khóa SSH Ed25519:",
+      "step2Title": "Sao chép khóa công khai",
+      "step2Desc": "Hiển thị khóa công khai để sao chép:",
+      "step3Title": "Thêm vào DigitalOcean",
+      "step3Desc": "Vào DigitalOcean Control Panel > Settings > Security > SSH Keys > Add SSH Key.",
+      "step4Title": "Tạo Droplet",
+      "step4Desc": "Khi tạo Droplet, chọn khóa SSH trong phần 'Authentication'.",
+      "step5Title": "Kết nối đến Droplet",
+      "step5Desc": "SSH vào Droplet của bạn:"
+    }
+  },
+  "footer": {
+    "about": "Giới thiệu về công cụ tạo khóa SSH trực tuyến này",
+    "aboutDesc": "Đây là công cụ tạo khóa SSH trực tuyến miễn phí, mã nguồn mở, chạy hoàn toàn trên trình duyệt của bạn. Không xử lý phía máy chủ, không thu thập dữ liệu - chỉ tạo khóa an toàn.",
+    "securityFirst": "Bảo mật là ưu tiên hàng đầu",
+    "security1": "Toàn bộ quá trình tạo khóa diễn ra trên trình duyệt của bạn",
+    "security2": "Không có dữ liệu nào được gửi đến bất kỳ máy chủ nào",
+    "security3": "Mã nguồn mở và có thể kiểm tra được",
+    "security4": "Sử dụng các thư viện mật mã tiêu chuẩn ngành",
+    "resources": "Tài nguyên",
+    "sshKeyGuide": "Tài liệu SSH của GitHub",
+    "githubSetup": "Tài liệu SSH của GitLab",
+    "bestPractices": "SSH Academy",
+    "madeWith": "Được tạo với",
+    "forDevelopers": "cho các lập trình viên toàn thế giới",
+    "copyright": "© {year} SSH Key Generator. Mã nguồn mở theo giấy phép MIT."
+  },
+  "seo": {
+    "whatIs": {
+      "title": "Công cụ tạo khóa SSH trực tuyến là gì?",
+      "desc": "Công cụ tạo khóa SSH trực tuyến như công cụ này giúp tạo cặp khóa mật mã an toàn ngay trên trình duyệt của bạn. Khóa SSH bao gồm khóa công khai (chia sẻ với máy chủ) và khóa bí mật (giữ bí mật). Không giống như mật khẩu, khóa SSH được tạo trực tuyến gần như không thể bị phá bằng phương pháp brute force."
+    },
+    "whyUse": {
+      "title": "Tại sao nên sử dụng công cụ tạo khóa SSH trực tuyến này?",
+      "secure": {
+        "title": "Tạo khóa trực tuyến an toàn",
+        "desc": "Mọi thao tác mật mã đều diễn ra trên trình duyệt của bạn. Công cụ tạo khóa SSH trực tuyến này đảm bảo khóa bí mật không bao giờ rời khỏi thiết bị của bạn."
+      },
+      "modern": {
+        "title": "Thuật toán hiện đại",
+        "desc": "Tạo khóa Ed25519 (khuyến nghị) hoặc khóa RSA với độ mạnh lên đến 4096-bit."
+      },
+      "easy": {
+        "title": "Dễ sử dụng",
+        "desc": "Giao diện đơn giản với các nút sao chép/tải xuống. Hoạt động ngay lập tức không cần cài đặt."
+      },
+      "free": {
+        "title": "Miễn phí & Mã nguồn mở",
+        "desc": "Không cần đăng ký, không theo dõi, không mất phí. Giấy phép MIT và được cộng đồng xác minh."
+      }
+    },
+    "howTo": {
+      "title": "Cách tạo khóa SSH trực tuyến",
+      "step1": "Chọn thuật toán: Chọn Ed25519 (khuyến nghị) hoặc RSA",
+      "step2": "Thêm ghi chú: Định danh tùy chọn như email của bạn",
+      "step3": "Tạo khóa: Nhấn nút để tạo cặp khóa",
+      "step4": "Lưu khóa: Tải xuống hoặc sao chép khóa công khai và khóa bí mật",
+      "step5": "Thêm vào máy chủ: Sao chép khóa công khai vào ~/.ssh/authorized_keys hoặc nhà cung cấp Git của bạn"
+    },
+    "comparison": {
+      "title": "Ed25519 và RSA: Nên chọn loại nào?",
+      "intro": "Hiểu sự khác biệt giữa hai thuật toán khóa SSH phổ biến này giúp bạn đưa ra lựa chọn đúng đắn cho nhu cầu bảo mật của mình.",
+      "feature": "Tính năng",
+      "algorithmType": "Loại thuật toán",
+      "keySize": "Kích thước khóa",
+      "signatureSize": "Kích thước chữ ký",
+      "security": "Mức độ bảo mật",
+      "performance": "Hiệu suất",
+      "compatibility": "Khả năng tương thích",
+      "quantumResistance": "Khả năng chống lượng tử",
+      "bestFor": "Phù hợp nhất cho",
+      "recommendation": "Khuyến nghị",
+      "ed25519AlgoType": "Đường cong Elliptic (Curve25519)",
+      "rsaAlgoType": "Phân tích thừa số nguyên",
+      "ed25519KeySize": "256 bit (nhỏ gọn)",
+      "rsaKeySize": "2048-4096 bit (lớn hơn)",
+      "ed25519SigSize": "64 byte",
+      "rsaSigSize": "256-512 byte",
+      "ed25519Security": "Tương đương ~128-bit",
+      "rsaSecurity": "~112-128-bit (4096)",
+      "ed25519Performance": "Rất nhanh (nhanh hơn 10 lần)",
+      "rsaPerformance": "Tạo khóa chậm hơn",
+      "ed25519Compat": "OpenSSH 6.5+ (2014)",
+      "rsaCompat": "Toàn cầu (mọi hệ thống)",
+      "ed25519Quantum": "Không chống lượng tử",
+      "rsaQuantum": "Không chống lượng tử",
+      "ed25519BestFor": "GitHub, GitLab, máy chủ hiện đại",
+      "rsaBestFor": "Hệ thống cũ, phần cứng cũ",
+      "ed25519Rec": "Lựa chọn tốt nhất cho hầu hết người dùng",
+      "rsaRec": "Dùng để hỗ trợ hệ thống cũ"
+    },
+    "useCases": {
+      "title": "Các trường hợp sử dụng khóa SSH phổ biến",
+      "git": {
+        "title": "Lưu trữ Git",
+        "desc": "Push và pull mã nguồn an toàn từ GitHub, GitLab, Bitbucket mà không cần nhập mật khẩu."
+      },
+      "server": {
+        "title": "Truy cập máy chủ",
+        "desc": "SSH vào máy chủ Linux/Unix, các instance đám mây (AWS, GCP, Azure) và các nhà cung cấp VPS."
+      },
+      "automation": {
+        "title": "Tự động hóa CI/CD",
+        "desc": "Cho phép triển khai tự động, script và pipeline DevOps truy cập tài nguyên từ xa."
+      },
+      "tunnels": {
+        "title": "Đường hầm bảo mật",
+        "desc": "Tạo đường hầm mã hóa để truy cập cơ sở dữ liệu, chuyển tiếp cổng và giao tiếp an toàn."
+      }
+    },
+    "faq": {
+      "title": "Câu hỏi thường gặp",
+      "subtitle": "Tìm câu trả lời cho các câu hỏi phổ biến về khóa SSH và công cụ này.",
+      "safe": {
+        "question": "Tạo khóa SSH trực tuyến có an toàn không?",
+        "answer": "Có, công cụ này hoàn toàn an toàn vì toàn bộ quá trình tạo khóa diễn ra trên trình duyệt của bạn sử dụng Web Crypto API. Khóa bí mật không bao giờ rời khỏi thiết bị và không bao giờ được truyền đến bất kỳ máy chủ nào. Mã nguồn mở và có thể kiểm tra trên GitHub."
+      },
+      "ed25519VsRsa": {
+        "question": "Sự khác biệt giữa Ed25519 và RSA là gì?",
+        "answer": "Ed25519 là thuật toán đường cong elliptic hiện đại cung cấp bảo mật tốt hơn với kích thước khóa nhỏ hơn (256-bit so với 2048-4096-bit của RSA). Khóa Ed25519 tạo và sử dụng nhanh hơn, được khuyến nghị cho hầu hết các thiết lập SSH mới. RSA cũ hơn nhưng tương thích rộng hơn với các hệ thống cũ."
+      },
+      "github": {
+        "question": "Làm thế nào để thêm khóa SSH vào GitHub?",
+        "answer": "1) Tạo khóa SSH bằng công cụ này, 2) Sao chép khóa công khai, 3) Vào GitHub Settings > SSH and GPG keys, 4) Nhấn 'New SSH key', 5) Dán khóa công khai và đặt tiêu đề, 6) Nhấn 'Add SSH key'. Kiểm tra bằng: ssh -T git@github.com"
+      },
+      "rsaKeySize": {
+        "question": "Nên sử dụng kích thước khóa RSA nào?",
+        "answer": "Đối với khóa RSA, 4096-bit được khuyến nghị để bảo mật tối đa. 2048-bit là kích thước tối thiểu chấp nhận được và cung cấp bảo mật đủ cho hầu hết các mục đích. Khóa nhỏ hơn 2048-bit được coi là không an toàn và không nên sử dụng."
+      },
+      "offline": {
+        "question": "Tôi có thể sử dụng công cụ tạo khóa SSH này ngoại tuyến không?",
+        "answer": "Có! Công cụ tạo khóa SSH này là ứng dụng web tiến bộ (PWA) hoạt động ngoại tuyến. Sau lần truy cập đầu tiên, bạn có thể cài đặt như một ứng dụng trên thiết bị và tạo khóa SSH mà không cần kết nối internet. Mọi thao tác mật mã đều chạy cục bộ trên trình duyệt của bạn."
+      },
+      "passphrase": {
+        "question": "Tôi có nên sử dụng mật khẩu bảo vệ cho khóa SSH không?",
+        "answer": "Có, việc sử dụng mật khẩu bảo vệ rất được khuyến khích. Mật khẩu bảo vệ thêm một lớp bảo mật - ngay cả khi ai đó có được tệp khóa bí mật của bạn, họ cũng không thể sử dụng nếu không có mật khẩu. Hãy sử dụng mật khẩu mạnh, dễ nhớ cho các khóa quan trọng."
+      },
+      "multipleServers": {
+        "question": "Tôi có thể sử dụng cùng một khóa SSH cho nhiều máy chủ không?",
+        "answer": "Có, bạn có thể sử dụng cùng một khóa công khai SSH trên nhiều máy chủ. Tuy nhiên, để thực hành bảo mật tốt hơn, hãy cân nhắc sử dụng các khóa khác nhau cho các mục đích khác nhau (ví dụ: công việc và cá nhân, production và development). Điều này hạn chế rủi ro nếu một khóa bị lộ."
+      },
+      "fingerprint": {
+        "question": "Dấu vân tay khóa SSH là gì?",
+        "answer": "Dấu vân tay khóa SSH là một định danh ngắn, duy nhất được tạo ra từ khóa công khai của bạn bằng hàm băm (SHA256 hoặc MD5). Nó được sử dụng để xác minh tính xác thực của khóa khi kết nối đến máy chủ. Dấu vân tay giúp bạn xác nhận bạn đang kết nối đến đúng máy chủ."
+      },
+      "bestAlgorithm": {
+        "question": "Thuật toán khóa SSH tốt nhất năm 2025 là gì?",
+        "answer": "Ed25519 là thuật toán được khuyến nghị năm 2025 cho hầu hết các trường hợp sử dụng. Nó cung cấp bảo mật tuyệt vời với kích thước khóa 256-bit, hiệu suất nhanh và được hỗ trợ bởi tất cả các triển khai SSH hiện đại. Chỉ sử dụng RSA nếu bạn cần tương thích với hệ thống cũ."
+      },
+      "authorizedKeys": {
+        "question": "Tệp authorized_keys là gì?",
+        "answer": "Tệp authorized_keys (nằm tại ~/.ssh/authorized_keys trên máy chủ Linux/macOS) chứa danh sách các khóa công khai được phép kết nối đến tài khoản đó. Mỗi dòng là một khóa công khai. Thêm khóa công khai của bạn vào tệp này để cho phép đăng nhập SSH không cần mật khẩu."
+      },
+      "bestOnlineGenerator": {
+        "question": "Công cụ tạo khóa SSH trực tuyến tốt nhất là gì?",
+        "answer": "Công cụ tạo khóa SSH này là một trong những lựa chọn trực tuyến miễn phí tốt nhất vì nó chạy 100% trên trình duyệt, hỗ trợ thuật toán Ed25519 và RSA hiện đại, hoạt động ngoại tuyến như PWA, và không bao giờ gửi khóa bí mật đến bất kỳ máy chủ nào."
+      },
+      "permissions": {
+        "question": "Khóa bí mật SSH nên có quyền truy cập như thế nào?",
+        "answer": "Khóa bí mật SSH nên có quyền truy cập hạn chế. Trên Linux/macOS, sử dụng 'chmod 600 ~/.ssh/id_ed25519' (chủ sở hữu đọc/ghi) hoặc 'chmod 400' (chủ sở hữu chỉ đọc). SSH sẽ từ chối sử dụng khóa có quyền truy cập quá rộng. Thư mục .ssh nên có quyền 700."
+      }
+    }
+  },
+  "theme": {
+    "light": "Sáng",
+    "dark": "Tối",
+    "system": "Hệ thống"
+  },
+  "notFound": {
+    "title": "Không tìm thấy trang",
+    "code": "404",
+    "description": "Trang bạn đang tìm kiếm không tồn tại hoặc đã được chuyển đi.",
+    "backHome": "Về trang chủ"
+  }
+}

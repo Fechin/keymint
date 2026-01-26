@@ -1,0 +1,342 @@
+{
+  "header": {
+    "title": "SSH Nøkkelgenerator",
+    "subtitle": "Gratis og sikker",
+    "clientSide": "100% klientsidebasert",
+    "viewOnGitHub": "Se på GitHub"
+  },
+  "hero": {
+    "title": "SSH Nøkkelgenerator på nett",
+    "subtitle": "Lag sikre SSH-nøkler umiddelbart i nettleseren din med denne gratis SSH nøkkelgeneratoren. Fungerer med GitHub, GitLab, Bitbucket og alle SSH-servere."
+  },
+  "tabs": {
+    "generate": "Generer nøkler",
+    "generateShort": "Generer",
+    "commands": "Kommandomodus",
+    "commandsShort": "Kommandoer",
+    "config": "SSH-konfigurasjon",
+    "configShort": "Konfig",
+    "guides": "Plattformguider",
+    "guidesShort": "Guider"
+  },
+  "generator": {
+    "title": "SSH nøkkelgenerator på nett",
+    "description": "Generer et nytt SSH-nøkkelpar sikkert i nettleseren din med denne gratis generatoren. Ingen data sendes til noen server.",
+    "algorithm": "Algoritme",
+    "algorithmTooltip": "Ed25519 anbefales for de fleste tilfeller. Bruk RSA hvis du trenger kompatibilitet med eldre systemer.",
+    "comment": "Kommentar (valgfritt)",
+    "commentTooltip": "En kommentar for å identifisere denne nøkkelen. Vanligvis e-postadressen din.",
+    "commentPlaceholder": "bruker@eksempel.no",
+    "generateButton": "Generer nøkkelpar",
+    "generating": "Genererer...",
+    "passphrase": "Passfrase (valgfritt)",
+    "passphraseTooltip": "En passfrase gir ekstra sikkerhet. Selv om noen får tak i din private nøkkel, kan de ikke bruke den uten passfrasen.",
+    "passphrasePlaceholder": "Skriv inn passfrase for kryptering",
+    "confirmPassphrase": "Bekreft passfrase",
+    "confirmPassphrasePlaceholder": "Skriv inn passfrasen på nytt",
+    "passphrasesMismatch": "Passfrasene stemmer ikke overens",
+    "noPassphraseWarning": "Ingen passfrase angitt. Din private nøkkel vil være ukryptert. Vurder å legge til en passfrase for ekstra sikkerhet.",
+    "securityTitle": "100% klientsidebasert SSH nøkkelgenerator",
+    "securityDesc": "All nøkkelgenerering skjer lokalt i nettleseren din. Denne SSH nøkkelgeneratoren overfører aldri dine private nøkler.",
+    "noKeysYet": "Ingen nøkler generert ennå",
+    "noKeysHint": "Klikk på «Generer nøkkelpar» for å lage dine SSH-nøkler"
+  },
+  "algorithms": {
+    "ed25519": "Ed25519 (Anbefalt)",
+    "ed25519Desc": "Moderne, rask og sikker. Best for de fleste bruksområder.",
+    "rsa4096": "RSA 4096-bit",
+    "rsa4096Desc": "Maksimal kompatibilitet med eldre systemer.",
+    "rsa2048": "RSA 2048-bit",
+    "rsa2048Desc": "Minimum anbefalt RSA-størrelse for kompatibilitet."
+  },
+  "keyDisplay": {
+    "publicKey": "Offentlig nøkkel",
+    "publicKeyDesc": "Legg denne til i authorized_keys på eksterne servere eller i GitHub/GitLab.",
+    "privateKey": "Privat nøkkel",
+    "privateKeyWarning": "Hold denne hemmelig! Del aldri din private nøkkel.",
+    "fingerprint": "Nøkkelfingeravtrykk",
+    "copy": "Kopier",
+    "copied": "Kopiert!",
+    "download": "Last ned",
+    "reveal": "Vis",
+    "hide": "Skjul",
+    "clickToReveal": "Klikk på Vis for å se den private nøkkelen"
+  },
+  "commands": {
+    "title": "SSH-nøkkelgenereringskommandoer",
+    "description": "Generer ssh-keygen-kommandoer for din foretrukne plattform. Kopier og kjør disse i terminalen din.",
+    "algorithm": "Algoritme",
+    "comment": "Kommentar",
+    "filename": "Filnavn (valgfritt)",
+    "quickCommand": "Hurtigkommando",
+    "completeSetup": "Fullstendig oppsett",
+    "copyAll": "Kopier alt"
+  },
+  "sshConfig": {
+    "title": "SSH-konfigurasjonsbygger",
+    "description": "Bygg din ~/.ssh/config-fil. Legg til verter og last ned konfigurasjonen.",
+    "hostAlias": "Vertsalias",
+    "hostAliasRequired": "Vertsalias *",
+    "hostname": "Vertsnavn",
+    "hostnameRequired": "Vertsnavn *",
+    "hostnamePlaceholder": "192.168.1.100 eller eksempel.no",
+    "user": "Bruker",
+    "port": "Port",
+    "identityFile": "Identitetsfil",
+    "identityFilePlaceholder": "~/.ssh/id_ed25519",
+    "addHost": "Legg til vert",
+    "configuredHosts": "Konfigurerte verter",
+    "generatedConfig": "Generert konfigurasjon",
+    "saveToPath": "Lagre dette i ~/.ssh/config",
+    "noHosts": "# Ingen verter konfigurert ennå",
+    "advancedOptions": "Avanserte alternativer",
+    "proxyJump": "ProxyJump",
+    "proxyJumpPlaceholder": "bastion-vert",
+    "proxyJumpDesc": "Hopp via en bastion-/hoppvert for å nå målet",
+    "forwardAgent": "Videresend agent",
+    "forwardAgentDesc": "Videresend SSH-agenten din til den eksterne verten"
+  },
+  "guides": {
+    "title": "Plattformoppsettguider",
+    "description": "Steg-for-steg-instruksjoner for å sette opp SSH-nøkler på populære Git-plattformer.",
+    "officialDocs": "Offisiell dokumentasjon",
+    "sshSetup": "{platform} SSH-oppsett",
+    "github": {
+      "step1Title": "Generer SSH-nøkkel",
+      "step1Desc": "Bruk generatoren ovenfor eller kjør denne kommandoen:",
+      "step2Title": "Start SSH-agent",
+      "step2Desc": "Start ssh-agent i bakgrunnen:",
+      "step3Title": "Legg nøkkel til agent",
+      "step3Desc": "Legg til din private SSH-nøkkel i agenten:",
+      "step4Title": "Kopier offentlig nøkkel",
+      "step4Desc": "Kopier den offentlige nøkkelen til utklippstavlen:",
+      "step5Title": "Legg til i GitHub",
+      "step5Desc": "Gå til GitHub-innstillinger > SSH- og GPG-nøkler > Ny SSH-nøkkel. Lim inn den offentlige nøkkelen.",
+      "step6Title": "Test tilkoblingen",
+      "step6Desc": "Verifiser SSH-tilkoblingen din:"
+    },
+    "gitlab": {
+      "step1Title": "Generer SSH-nøkkel",
+      "step1Desc": "Bruk Ed25519 for bedre sikkerhet:",
+      "step2Title": "Legg nøkkel til agent",
+      "step2Desc": "Legg til SSH-nøkkelen din i agenten:",
+      "step3Title": "Kopier offentlig nøkkel",
+      "step3Desc": "Kopier den offentlige nøkkelen din:",
+      "step4Title": "Legg til i GitLab",
+      "step4Desc": "Gå til GitLab-innstillinger > SSH-nøkler. Lim inn den offentlige nøkkelen og sett en utløpsdato.",
+      "step5Title": "Test tilkoblingen",
+      "step5Desc": "Verifiser SSH-tilkoblingen din:"
+    },
+    "bitbucket": {
+      "step1Title": "Generer SSH-nøkkel",
+      "step1Desc": "Opprett en Ed25519 SSH-nøkkel:",
+      "step2Title": "Legg nøkkel til agent",
+      "step2Desc": "Start ssh-agent og legg til nøkkelen din:",
+      "step3Title": "Kopier offentlig nøkkel",
+      "step3Desc": "Kopier den offentlige nøkkelen til utklippstavlen:",
+      "step4Title": "Legg til i Bitbucket",
+      "step4Desc": "Gå til Bitbucket-innstillinger > Personlige innstillinger > SSH-nøkler > Legg til nøkkel.",
+      "step5Title": "Test tilkoblingen",
+      "step5Desc": "Verifiser SSH-tilkoblingen din:"
+    },
+    "aws": {
+      "step1Title": "Generer SSH-nøkkel",
+      "step1Desc": "Opprett en Ed25519 SSH-nøkkel for AWS EC2:",
+      "step2Title": "Kopier offentlig nøkkel",
+      "step2Desc": "Vis den offentlige nøkkelen din for å kopiere den:",
+      "step3Title": "Importer nøkkel til AWS",
+      "step3Desc": "Gå til AWS-konsollen > EC2 > Nøkkelpar > Handlinger > Importer nøkkelpar. Lim inn den offentlige nøkkelen.",
+      "step4Title": "Angi tillatelser",
+      "step4Desc": "Sørg for at den private nøkkelen har riktige tillatelser:",
+      "step5Title": "Koble til instansen",
+      "step5Desc": "SSH inn til EC2-instansen din (erstatt med dine detaljer):"
+    },
+    "azure": {
+      "step1Title": "Generer SSH-nøkkel",
+      "step1Desc": "Opprett en Ed25519 SSH-nøkkel for Azure:",
+      "step2Title": "Kopier offentlig nøkkel",
+      "step2Desc": "Vis den offentlige nøkkelen din:",
+      "step3Title": "Legg til under VM-oppretting",
+      "step3Desc": "Når du oppretter en VM, velg «Offentlig SSH-nøkkel» for autentisering og lim inn den offentlige nøkkelen.",
+      "step4Title": "Koble til VM",
+      "step4Desc": "SSH inn til din Azure VM:",
+      "step5Title": "Oppdater eksisterende VM (valgfritt)",
+      "step5Desc": "Legg til nøkkel i eksisterende VM med Azure CLI:"
+    },
+    "digitalocean": {
+      "step1Title": "Generer SSH-nøkkel",
+      "step1Desc": "Opprett en Ed25519 SSH-nøkkel:",
+      "step2Title": "Kopier offentlig nøkkel",
+      "step2Desc": "Vis den offentlige nøkkelen din for å kopiere den:",
+      "step3Title": "Legg til i DigitalOcean",
+      "step3Desc": "Gå til DigitalOcean-kontrollpanelet > Innstillinger > Sikkerhet > SSH-nøkler > Legg til SSH-nøkkel.",
+      "step4Title": "Opprett Droplet",
+      "step4Desc": "Når du oppretter en Droplet, velg SSH-nøkkelen din under «Autentisering».",
+      "step5Title": "Koble til Droplet",
+      "step5Desc": "SSH inn til din Droplet:"
+    }
+  },
+  "footer": {
+    "about": "Om denne SSH nøkkelgeneratoren",
+    "aboutDesc": "Dette er en gratis, åpen kildekode SSH nøkkelgenerator som kjører helt i nettleseren din. Ingen serverbehandling, ingen datainnsamling – bare sikker nøkkelgenerering.",
+    "securityFirst": "Sikkerhet først",
+    "security1": "All nøkkelgenerering skjer i nettleseren din",
+    "security2": "Ingen data sendes noensinne til noen server",
+    "security3": "Åpen kildekode som kan gjennomgås",
+    "security4": "Bruker bransjestandard kryptografibiblioteker",
+    "resources": "Ressurser",
+    "sshKeyGuide": "GitHub SSH-dokumentasjon",
+    "githubSetup": "GitLab SSH-dokumentasjon",
+    "bestPractices": "SSH Academy",
+    "madeWith": "Laget med",
+    "forDevelopers": "for utviklere verden over",
+    "copyright": "© {year} SSH Key Generator. Åpen kildekode under MIT-lisens."
+  },
+  "seo": {
+    "whatIs": {
+      "title": "Hva er en SSH nøkkelgenerator på nett?",
+      "desc": "En SSH nøkkelgenerator på nett, som dette verktøyet, oppretter kryptografiske nøkkelpar sikkert i nettleseren din. SSH-nøkler består av en offentlig nøkkel (deles med servere) og en privat nøkkel (holdes hemmelig). I motsetning til passord er SSH-nøkler generert på nett praktisk talt umulige å knekke med brute force."
+    },
+    "whyUse": {
+      "title": "Hvorfor bruke denne SSH nøkkelgeneratoren?",
+      "secure": {
+        "title": "Sikker generering på nett",
+        "desc": "Alle kryptografiske operasjoner skjer i nettleseren din. Denne SSH nøkkelgeneratoren sikrer at dine private nøkler aldri forlater enheten din."
+      },
+      "modern": {
+        "title": "Moderne algoritmer",
+        "desc": "Generer Ed25519-nøkler (anbefalt) eller RSA-nøkler med opptil 4096-bits styrke."
+      },
+      "easy": {
+        "title": "Enkel å bruke",
+        "desc": "Enkelt grensesnitt med kopier/last ned-knapper. Fungerer umiddelbart uten installasjon."
+      },
+      "free": {
+        "title": "Gratis og åpen kildekode",
+        "desc": "Ingen registrering, ingen sporing, ingen kostnad. MIT-lisensiert og verifisert av fellesskapet."
+      }
+    },
+    "howTo": {
+      "title": "Slik lager du SSH-nøkkel på nett",
+      "step1": "Velg algoritme: Velg Ed25519 (anbefalt) eller RSA",
+      "step2": "Legg til kommentar: Valgfri identifikator som e-postadressen din",
+      "step3": "Generer: Klikk på knappen for å opprette nøkkelparet ditt",
+      "step4": "Lagre nøklene: Last ned eller kopier de offentlige og private nøklene",
+      "step5": "Legg til på server: Kopier den offentlige nøkkelen til ~/.ssh/authorized_keys eller din Git-leverandør"
+    },
+    "comparison": {
+      "title": "Ed25519 vs RSA: Hvilken bør du velge?",
+      "intro": "Å forstå forskjellene mellom disse to populære SSH-nøkkelalgoritmene hjelper deg med å ta riktig valg for dine sikkerhetsbehov.",
+      "feature": "Egenskap",
+      "algorithmType": "Algoritmetype",
+      "keySize": "Nøkkelstørrelse",
+      "signatureSize": "Signaturstørrelse",
+      "security": "Sikkerhetsnivå",
+      "performance": "Ytelse",
+      "compatibility": "Kompatibilitet",
+      "quantumResistance": "Kvantemotstand",
+      "bestFor": "Best for",
+      "recommendation": "Anbefaling",
+      "ed25519AlgoType": "Elliptisk kurve (Curve25519)",
+      "rsaAlgoType": "Heltallsfaktorisering",
+      "ed25519KeySize": "256 bits (kompakt)",
+      "rsaKeySize": "2048–4096 bits (større)",
+      "ed25519SigSize": "64 bytes",
+      "rsaSigSize": "256–512 bytes",
+      "ed25519Security": "~128-bits ekvivalent",
+      "rsaSecurity": "~112–128-bits (4096)",
+      "ed25519Performance": "Svært rask (10x raskere)",
+      "rsaPerformance": "Tregere generering",
+      "ed25519Compat": "OpenSSH 6.5+ (2014)",
+      "rsaCompat": "Universell (alle systemer)",
+      "ed25519Quantum": "Ikke kvanteresistent",
+      "rsaQuantum": "Ikke kvanteresistent",
+      "ed25519BestFor": "GitHub, GitLab, moderne servere",
+      "rsaBestFor": "Eldre systemer, gammel maskinvare",
+      "ed25519Rec": "Beste valg for de fleste brukere",
+      "rsaRec": "Bruk for støtte av eldre systemer"
+    },
+    "useCases": {
+      "title": "Vanlige bruksområder for SSH-nøkler",
+      "git": {
+        "title": "Git-hosting",
+        "desc": "Push og pull kode sikkert fra GitHub, GitLab, Bitbucket uten å skrive inn passord."
+      },
+      "server": {
+        "title": "Servertilgang",
+        "desc": "SSH inn til Linux/Unix-servere, skyinstanser (AWS, GCP, Azure) og VPS-leverandører."
+      },
+      "automation": {
+        "title": "CI/CD-automatisering",
+        "desc": "Aktiver automatiserte utrullinger, skript og DevOps-pipelines for tilgang til eksterne ressurser."
+      },
+      "tunnels": {
+        "title": "Sikre tunneler",
+        "desc": "Opprett krypterte tunneler for databasetilgang, portvideresending og sikker kommunikasjon."
+      }
+    },
+    "faq": {
+      "title": "Ofte stilte spørsmål",
+      "subtitle": "Finn svar på vanlige spørsmål om SSH-nøkler og dette verktøyet.",
+      "safe": {
+        "question": "Er det trygt å generere SSH-nøkler på nett?",
+        "answer": "Ja, dette verktøyet er 100 % trygt fordi all nøkkelgenerering skjer helt i nettleseren din ved hjelp av Web Crypto API. Dine private nøkler forlater aldri enheten din og overføres aldri til noen server. Kildekoden er åpen og kan gjennomgås på GitHub."
+      },
+      "ed25519VsRsa": {
+        "question": "Hva er forskjellen mellom Ed25519 og RSA?",
+        "answer": "Ed25519 er en moderne elliptisk kurve-algoritme som tilbyr bedre sikkerhet med mindre nøkkelstørrelser (256-bit mot 2048–4096-bit RSA). Ed25519-nøkler er raskere å generere og bruke, og anbefales for de fleste nye SSH-oppsett. RSA er eldre, men har bredere kompatibilitet med eldre systemer."
+      },
+      "github": {
+        "question": "Hvordan legger jeg til SSH-nøkkelen min i GitHub?",
+        "answer": "1) Generer SSH-nøkkelen din med dette verktøyet, 2) Kopier den offentlige nøkkelen, 3) Gå til GitHub-innstillinger > SSH- og GPG-nøkler, 4) Klikk på «Ny SSH-nøkkel», 5) Lim inn den offentlige nøkkelen og gi den en tittel, 6) Klikk på «Legg til SSH-nøkkel». Test med: ssh -T git@github.com"
+      },
+      "rsaKeySize": {
+        "question": "Hvilken nøkkelstørrelse bør jeg bruke for RSA?",
+        "answer": "For RSA-nøkler anbefales 4096-bit for maksimal sikkerhet. 2048-bit er minimum akseptabel størrelse og gir tilstrekkelig sikkerhet for de fleste formål. Nøkler mindre enn 2048-bit anses som usikre og bør ikke brukes."
+      },
+      "offline": {
+        "question": "Kan jeg bruke denne SSH nøkkelgeneratoren uten nett?",
+        "answer": "Ja! Denne SSH nøkkelgeneratoren er en progressiv webapplikasjon (PWA) som fungerer uten nett. Etter ditt første besøk kan du installere den som en app på enheten din og generere SSH-nøkler uten internettforbindelse. Alle kryptografiske operasjoner kjører lokalt i nettleseren din."
+      },
+      "passphrase": {
+        "question": "Bør jeg bruke en passfrase for SSH-nøkkelen min?",
+        "answer": "Ja, bruk av passfrase anbefales sterkt. En passfrase legger til et ekstra sikkerhetslag – selv om noen får tilgang til den private nøkkelfilen din, kan de ikke bruke den uten passfrasen. Bruk en sterk, minneverdig passfrase for viktige nøkler."
+      },
+      "multipleServers": {
+        "question": "Kan jeg bruke samme SSH-nøkkel for flere servere?",
+        "answer": "Ja, du kan bruke samme offentlige SSH-nøkkel på flere servere. For bedre sikkerhetspraksis bør du imidlertid vurdere å bruke forskjellige nøkler for forskjellige formål (f.eks. jobb vs. privat, produksjon vs. utvikling). Dette begrenser eksponeringen hvis én nøkkel blir kompromittert."
+      },
+      "fingerprint": {
+        "question": "Hva er et SSH-nøkkelfingeravtrykk?",
+        "answer": "Et SSH-nøkkelfingeravtrykk er en kort, unik identifikator avledet fra den offentlige nøkkelen din ved hjelp av en hash-funksjon (SHA256 eller MD5). Det brukes til å verifisere nøkkelens autentisitet når du kobler til servere. Fingeravtrykket hjelper deg med å bekrefte at du kobler til riktig server."
+      },
+      "bestAlgorithm": {
+        "question": "Hva er den beste SSH-nøkkelalgoritmen i 2025?",
+        "answer": "Ed25519 er den anbefalte algoritmen i 2025 for de fleste bruksområder. Den gir utmerket sikkerhet med en 256-bits nøkkelstørrelse, rask ytelse og støttes av alle moderne SSH-implementasjoner. Bruk kun RSA hvis du trenger kompatibilitet med eldre systemer."
+      },
+      "authorizedKeys": {
+        "question": "Hva er authorized_keys-filen?",
+        "answer": "Authorized_keys-filen (plassert i ~/.ssh/authorized_keys på Linux/macOS-servere) inneholder en liste over offentlige nøkler som har tillatelse til å koble til den kontoen. Hver linje er én offentlig nøkkel. Legg til den offentlige nøkkelen din i denne filen for å aktivere passordløs SSH-innlogging."
+      },
+      "bestOnlineGenerator": {
+        "question": "Hva er den beste SSH nøkkelgeneratoren på nett?",
+        "answer": "Denne SSH nøkkelgeneratoren er et av de beste gratis alternativene på nett fordi den kjører 100 % i nettleseren din, støtter moderne Ed25519- og RSA-algoritmer, fungerer uten nett som en PWA, og sender aldri de private nøklene dine til noen server."
+      },
+      "permissions": {
+        "question": "Hvilke tillatelser bør min private SSH-nøkkel ha?",
+        "answer": "Den private SSH-nøkkelen din bør ha begrensede tillatelser. På Linux/macOS, bruk «chmod 600 ~/.ssh/id_ed25519» (eier lese/skrive) eller «chmod 400» (eier kun lese). SSH vil nekte å bruke en nøkkel med for åpne tillatelser. .ssh-mappen bør være 700."
+      }
+    }
+  },
+  "theme": {
+    "light": "Lys",
+    "dark": "Mørk",
+    "system": "System"
+  },
+  "notFound": {
+    "title": "Siden ble ikke funnet",
+    "code": "404",
+    "description": "Siden du leter etter finnes ikke eller har blitt flyttet.",
+    "backHome": "Tilbake til forsiden"
+  }
+}

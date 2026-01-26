@@ -1,0 +1,342 @@
+{
+  "header": {
+    "title": "SSH Nøgle Generator",
+    "subtitle": "Gratis og sikker",
+    "clientSide": "100% Klientsidekørsel",
+    "viewOnGitHub": "Se på GitHub"
+  },
+  "hero": {
+    "title": "SSH Nøgle Generator Online",
+    "subtitle": "Opret sikre SSH nøgler direkte i din browser med denne gratis online SSH nøgle generator. Fungerer med GitHub, GitLab, Bitbucket og alle SSH servere."
+  },
+  "tabs": {
+    "generate": "Opret nøgler",
+    "generateShort": "Opret",
+    "commands": "Kommandotilstand",
+    "commandsShort": "Kommandoer",
+    "config": "SSH Config",
+    "configShort": "Config",
+    "guides": "Platformguides",
+    "guidesShort": "Guides"
+  },
+  "generator": {
+    "title": "Online SSH Nøgle Generator",
+    "description": "Opret et nyt SSH nøglepar sikkert i din browser med denne gratis online generator. Ingen data sendes til nogen server.",
+    "algorithm": "Algoritme",
+    "algorithmTooltip": "Ed25519 anbefales i de fleste tilfælde. Brug RSA hvis du har brug for kompatibilitet med ældre systemer.",
+    "comment": "Kommentar (valgfri)",
+    "commentTooltip": "En kommentar til at identificere denne nøgle. Typisk din e-mailadresse.",
+    "commentPlaceholder": "bruger@eksempel.dk",
+    "generateButton": "Generer nøglepar",
+    "generating": "Genererer...",
+    "passphrase": "Adgangskode (valgfri)",
+    "passphraseTooltip": "En adgangskode tilføjer ekstra sikkerhed. Selvom nogen får fat i din private nøgle, kan de ikke bruge den uden adgangskoden.",
+    "passphrasePlaceholder": "Indtast adgangskode til kryptering",
+    "confirmPassphrase": "Bekræft adgangskode",
+    "confirmPassphrasePlaceholder": "Gentag adgangskode",
+    "passphrasesMismatch": "Adgangskoderne stemmer ikke overens",
+    "noPassphraseWarning": "Ingen adgangskode angivet. Din private nøgle vil være ukrypteret. Overvej at tilføje en adgangskode for ekstra sikkerhed.",
+    "securityTitle": "100% Klientsidebaseret SSH Nøgle Generator",
+    "securityDesc": "Al nøglegenerering foregår lokalt i din browser. Denne online SSH nøgle generator sender aldrig dine private nøgler.",
+    "noKeysYet": "Ingen nøgler genereret endnu",
+    "noKeysHint": "Klik på \"Generer nøglepar\" for at oprette dine SSH nøgler"
+  },
+  "algorithms": {
+    "ed25519": "Ed25519 (Anbefalet)",
+    "ed25519Desc": "Moderne, hurtig, sikker. Bedst til de fleste anvendelser.",
+    "rsa4096": "RSA 4096-bit",
+    "rsa4096Desc": "Maksimal kompatibilitet med ældre systemer.",
+    "rsa2048": "RSA 2048-bit",
+    "rsa2048Desc": "Minimum anbefalet RSA størrelse for kompatibilitet."
+  },
+  "keyDisplay": {
+    "publicKey": "Offentlig nøgle",
+    "publicKeyDesc": "Tilføj denne til authorized_keys på fjernservere eller til GitHub/GitLab.",
+    "privateKey": "Privat nøgle",
+    "privateKeyWarning": "Hold denne hemmelig! Del aldrig din private nøgle.",
+    "fingerprint": "Nøglefingeraftryk",
+    "copy": "Kopiér",
+    "copied": "Kopieret!",
+    "download": "Download",
+    "reveal": "Vis",
+    "hide": "Skjul",
+    "clickToReveal": "Klik på Vis for at se den private nøgle"
+  },
+  "commands": {
+    "title": "SSH Nøglegenereringskommandoer",
+    "description": "Generer ssh-keygen kommandoer til din foretrukne platform. Kopiér og kør disse i din terminal.",
+    "algorithm": "Algoritme",
+    "comment": "Kommentar",
+    "filename": "Filnavn (valgfrit)",
+    "quickCommand": "Hurtig kommando",
+    "completeSetup": "Komplet opsætning",
+    "copyAll": "Kopiér alt"
+  },
+  "sshConfig": {
+    "title": "SSH Config Builder",
+    "description": "Opbyg din ~/.ssh/config fil. Tilføj værter og download konfigurationen.",
+    "hostAlias": "Værtsalias",
+    "hostAliasRequired": "Værtsalias *",
+    "hostname": "HostName",
+    "hostnameRequired": "HostName *",
+    "hostnamePlaceholder": "192.168.1.100 eller eksempel.dk",
+    "user": "Bruger",
+    "port": "Port",
+    "identityFile": "IdentityFile",
+    "identityFilePlaceholder": "~/.ssh/id_ed25519",
+    "addHost": "Tilføj vært",
+    "configuredHosts": "Konfigurerede værter",
+    "generatedConfig": "Genereret konfiguration",
+    "saveToPath": "Gem denne til ~/.ssh/config",
+    "noHosts": "# Ingen værter konfigureret endnu",
+    "advancedOptions": "Avancerede indstillinger",
+    "proxyJump": "ProxyJump",
+    "proxyJumpPlaceholder": "bastion-vært",
+    "proxyJumpDesc": "Hop gennem en bastion/jump-vært for at nå målet",
+    "forwardAgent": "Forward Agent",
+    "forwardAgentDesc": "Videresend din SSH agent til fjernværten"
+  },
+  "guides": {
+    "title": "Platformopsætningsguides",
+    "description": "Trin-for-trin vejledninger til opsætning af SSH nøgler på populære Git-platforme.",
+    "officialDocs": "Officiel dokumentation",
+    "sshSetup": "{platform} SSH opsætning",
+    "github": {
+      "step1Title": "Generer SSH nøgle",
+      "step1Desc": "Brug generatoren ovenfor eller kør denne kommando:",
+      "step2Title": "Start SSH Agent",
+      "step2Desc": "Start ssh-agent i baggrunden:",
+      "step3Title": "Tilføj nøgle til Agent",
+      "step3Desc": "Tilføj din private SSH nøgle til agenten:",
+      "step4Title": "Kopiér offentlig nøgle",
+      "step4Desc": "Kopiér din offentlige nøgle til udklipsholderen:",
+      "step5Title": "Tilføj til GitHub",
+      "step5Desc": "Gå til GitHub Indstillinger > SSH og GPG nøgler > Ny SSH nøgle. Indsæt din offentlige nøgle.",
+      "step6Title": "Test forbindelse",
+      "step6Desc": "Bekræft din SSH forbindelse:"
+    },
+    "gitlab": {
+      "step1Title": "Generer SSH nøgle",
+      "step1Desc": "Brug Ed25519 for bedre sikkerhed:",
+      "step2Title": "Tilføj nøgle til Agent",
+      "step2Desc": "Tilføj din SSH nøgle til agenten:",
+      "step3Title": "Kopiér offentlig nøgle",
+      "step3Desc": "Kopiér din offentlige nøgle:",
+      "step4Title": "Tilføj til GitLab",
+      "step4Desc": "Gå til GitLab Præferencer > SSH nøgler. Indsæt din offentlige nøgle og angiv en udløbsdato.",
+      "step5Title": "Test forbindelse",
+      "step5Desc": "Bekræft din SSH forbindelse:"
+    },
+    "bitbucket": {
+      "step1Title": "Generer SSH nøgle",
+      "step1Desc": "Opret en Ed25519 SSH nøgle:",
+      "step2Title": "Tilføj nøgle til Agent",
+      "step2Desc": "Start ssh-agent og tilføj din nøgle:",
+      "step3Title": "Kopiér offentlig nøgle",
+      "step3Desc": "Kopiér din offentlige nøgle til udklipsholderen:",
+      "step4Title": "Tilføj til Bitbucket",
+      "step4Desc": "Gå til Bitbucket Indstillinger > Personlige indstillinger > SSH nøgler > Tilføj nøgle.",
+      "step5Title": "Test forbindelse",
+      "step5Desc": "Bekræft din SSH forbindelse:"
+    },
+    "aws": {
+      "step1Title": "Generer SSH nøgle",
+      "step1Desc": "Opret en Ed25519 SSH nøgle til AWS EC2:",
+      "step2Title": "Kopiér offentlig nøgle",
+      "step2Desc": "Vis din offentlige nøgle for at kopiere den:",
+      "step3Title": "Importér nøgle til AWS",
+      "step3Desc": "Gå til AWS Console > EC2 > Nøglepar > Handlinger > Importér nøglepar. Indsæt din offentlige nøgle.",
+      "step4Title": "Angiv tilladelser",
+      "step4Desc": "Sørg for at din private nøgle har korrekte tilladelser:",
+      "step5Title": "Opret forbindelse til instans",
+      "step5Desc": "SSH ind i din EC2 instans (erstat med dine detaljer):"
+    },
+    "azure": {
+      "step1Title": "Generer SSH nøgle",
+      "step1Desc": "Opret en Ed25519 SSH nøgle til Azure:",
+      "step2Title": "Kopiér offentlig nøgle",
+      "step2Desc": "Vis din offentlige nøgle:",
+      "step3Title": "Tilføj under VM oprettelse",
+      "step3Desc": "Når du opretter en VM, vælg 'SSH offentlig nøgle' som godkendelse og indsæt din offentlige nøgle.",
+      "step4Title": "Opret forbindelse til VM",
+      "step4Desc": "SSH ind i din Azure VM:",
+      "step5Title": "Opdater eksisterende VM (valgfrit)",
+      "step5Desc": "Tilføj nøgle til eksisterende VM ved hjælp af Azure CLI:"
+    },
+    "digitalocean": {
+      "step1Title": "Generer SSH nøgle",
+      "step1Desc": "Opret en Ed25519 SSH nøgle:",
+      "step2Title": "Kopiér offentlig nøgle",
+      "step2Desc": "Vis din offentlige nøgle for at kopiere den:",
+      "step3Title": "Tilføj til DigitalOcean",
+      "step3Desc": "Gå til DigitalOcean Kontrolpanel > Indstillinger > Sikkerhed > SSH nøgler > Tilføj SSH nøgle.",
+      "step4Title": "Opret Droplet",
+      "step4Desc": "Når du opretter en Droplet, vælg din SSH nøgle under 'Godkendelse'.",
+      "step5Title": "Opret forbindelse til Droplet",
+      "step5Desc": "SSH ind i din Droplet:"
+    }
+  },
+  "footer": {
+    "about": "Om denne online SSH nøgle generator",
+    "aboutDesc": "Dette er en gratis, open source online SSH nøgle generator der kører helt i din browser. Ingen serverbehandling, ingen dataindsamling - bare sikker nøglegenerering.",
+    "securityFirst": "Sikkerhed først",
+    "security1": "Al nøglegenerering foregår i din browser",
+    "security2": "Ingen data sendes nogensinde til nogen server",
+    "security3": "Open source og reviderbar kode",
+    "security4": "Bruger industristandard kryptografiske biblioteker",
+    "resources": "Ressourcer",
+    "sshKeyGuide": "GitHub SSH dokumentation",
+    "githubSetup": "GitLab SSH dokumentation",
+    "bestPractices": "SSH Academy",
+    "madeWith": "Lavet med",
+    "forDevelopers": "til udviklere verden over",
+    "copyright": "© {year} SSH Nøgle Generator. Open source under MIT licens."
+  },
+  "seo": {
+    "whatIs": {
+      "title": "Hvad er en online SSH nøgle generator?",
+      "desc": "En online SSH nøgle generator som dette værktøj opretter kryptografiske nøglepar sikkert i din browser. SSH nøgler består af en offentlig nøgle (deles med servere) og en privat nøgle (holdes hemmelig). I modsætning til adgangskoder er SSH nøgler genereret online praktisk talt umulige at knække gennem brute force."
+    },
+    "whyUse": {
+      "title": "Hvorfor bruge denne online SSH nøgle generator?",
+      "secure": {
+        "title": "Sikker online generering",
+        "desc": "Alle kryptografiske operationer foregår i din browser. Denne online SSH nøgle generator sikrer at dine private nøgler aldrig forlader din enhed."
+      },
+      "modern": {
+        "title": "Moderne algoritmer",
+        "desc": "Generer Ed25519 nøgler (anbefalet) eller RSA nøgler med op til 4096-bit styrke."
+      },
+      "easy": {
+        "title": "Nem at bruge",
+        "desc": "Enkel brugerflade med kopiér/download knapper. Virker øjeblikkeligt uden installation."
+      },
+      "free": {
+        "title": "Gratis og open source",
+        "desc": "Ingen registrering, ingen sporing, ingen omkostninger. MIT licenseret og verificeret af fællesskabet."
+      }
+    },
+    "howTo": {
+      "title": "Sådan genererer du SSH nøgle online",
+      "step1": "Vælg algoritme: Vælg Ed25519 (anbefalet) eller RSA",
+      "step2": "Tilføj kommentar: Valgfri identifikator som din e-mail",
+      "step3": "Generer: Klik på knappen for at oprette dit nøglepar",
+      "step4": "Gem nøgler: Download eller kopiér dine offentlige og private nøgler",
+      "step5": "Tilføj til server: Kopiér offentlig nøgle til ~/.ssh/authorized_keys eller din Git-udbyder"
+    },
+    "comparison": {
+      "title": "Ed25519 vs RSA: Hvad bør du vælge?",
+      "intro": "At forstå forskellene mellem disse to populære SSH nøglealgoritmer hjælper dig med at træffe det rigtige valg for dine sikkerhedsbehov.",
+      "feature": "Funktion",
+      "algorithmType": "Algoritmetype",
+      "keySize": "Nøglestørrelse",
+      "signatureSize": "Signaturstørrelse",
+      "security": "Sikkerhedsniveau",
+      "performance": "Ydeevne",
+      "compatibility": "Kompatibilitet",
+      "quantumResistance": "Kvanteresistens",
+      "bestFor": "Bedst til",
+      "recommendation": "Anbefaling",
+      "ed25519AlgoType": "Elliptisk kurve (Curve25519)",
+      "rsaAlgoType": "Heltalsfaktorisering",
+      "ed25519KeySize": "256 bit (kompakt)",
+      "rsaKeySize": "2048-4096 bit (større)",
+      "ed25519SigSize": "64 bytes",
+      "rsaSigSize": "256-512 bytes",
+      "ed25519Security": "~128-bit ækvivalent",
+      "rsaSecurity": "~112-128-bit (4096)",
+      "ed25519Performance": "Meget hurtig (10x hurtigere)",
+      "rsaPerformance": "Langsommere generering",
+      "ed25519Compat": "OpenSSH 6.5+ (2014)",
+      "rsaCompat": "Universel (alle systemer)",
+      "ed25519Quantum": "Ikke kvantesikker",
+      "rsaQuantum": "Ikke kvantesikker",
+      "ed25519BestFor": "GitHub, GitLab, moderne servere",
+      "rsaBestFor": "Ældre systemer, gammelt hardware",
+      "ed25519Rec": "Bedste valg for de fleste brugere",
+      "rsaRec": "Brug til understøttelse af ældre systemer"
+    },
+    "useCases": {
+      "title": "Almindelige anvendelser af SSH nøgler",
+      "git": {
+        "title": "Git hosting",
+        "desc": "Push og pull kode sikkert fra GitHub, GitLab, Bitbucket uden at indtaste adgangskoder."
+      },
+      "server": {
+        "title": "Serveradgang",
+        "desc": "SSH ind i Linux/Unix servere, cloud-instanser (AWS, GCP, Azure) og VPS-udbydere."
+      },
+      "automation": {
+        "title": "CI/CD automatisering",
+        "desc": "Muliggør automatiserede udrulninger, scripts og DevOps pipelines til at tilgå fjernressourcer."
+      },
+      "tunnels": {
+        "title": "Sikre tunneler",
+        "desc": "Opret krypterede tunneler til databaseadgang, port forwarding og sikker kommunikation."
+      }
+    },
+    "faq": {
+      "title": "Ofte stillede spørgsmål",
+      "subtitle": "Find svar på almindelige spørgsmål om SSH nøgler og dette værktøj.",
+      "safe": {
+        "question": "Er det sikkert at generere SSH nøgler online?",
+        "answer": "Ja, dette værktøj er 100% sikkert fordi al nøglegenerering foregår helt i din browser ved hjælp af Web Crypto API. Dine private nøgler forlader aldrig din enhed og sendes aldrig til nogen server. Kildekoden er open source og kan revideres på GitHub."
+      },
+      "ed25519VsRsa": {
+        "question": "Hvad er forskellen mellem Ed25519 og RSA?",
+        "answer": "Ed25519 er en moderne elliptisk kurve-algoritme der tilbyder bedre sikkerhed med mindre nøglestørrelser (256-bit vs 2048-4096-bit RSA). Ed25519 nøgler er hurtigere at generere og bruge, og anbefales til de fleste nye SSH opsætninger. RSA er ældre men har bredere kompatibilitet med ældre systemer."
+      },
+      "github": {
+        "question": "Hvordan tilføjer jeg min SSH nøgle til GitHub?",
+        "answer": "1) Generer din SSH nøgle med dette værktøj, 2) Kopiér den offentlige nøgle, 3) Gå til GitHub Indstillinger > SSH og GPG nøgler, 4) Klik på 'Ny SSH nøgle', 5) Indsæt din offentlige nøgle og giv den en titel, 6) Klik på 'Tilføj SSH nøgle'. Test med: ssh -T git@github.com"
+      },
+      "rsaKeySize": {
+        "question": "Hvilken nøglestørrelse bør jeg bruge til RSA?",
+        "answer": "For RSA nøgler anbefales 4096-bit for maksimal sikkerhed. 2048-bit er den minimale acceptable størrelse og tilbyder tilstrækkelig sikkerhed til de fleste formål. Nøgler mindre end 2048-bit betragtes som usikre og bør ikke bruges."
+      },
+      "offline": {
+        "question": "Kan jeg bruge denne SSH nøgle generator offline?",
+        "answer": "Ja! Denne SSH nøgle generator er en Progressive Web App (PWA) der virker offline. Efter dit første besøg kan du installere den som en app på din enhed og generere SSH nøgler uden internetforbindelse. Alle kryptografiske operationer kører lokalt i din browser."
+      },
+      "passphrase": {
+        "question": "Bør jeg bruge en adgangskode til min SSH nøgle?",
+        "answer": "Ja, brug af en adgangskode anbefales stærkt. En adgangskode tilføjer et ekstra sikkerhedslag - selvom nogen får adgang til din private nøglefil, kan de ikke bruge den uden adgangskoden. Brug en stærk, mindeværdig adgangskode til vigtige nøgler."
+      },
+      "multipleServers": {
+        "question": "Kan jeg bruge den samme SSH nøgle til flere servere?",
+        "answer": "Ja, du kan bruge den samme offentlige SSH nøgle på flere servere. For bedre sikkerhedspraksis bør du dog overveje at bruge forskellige nøgler til forskellige formål (f.eks. arbejde vs personlig, produktion vs udvikling). Dette begrænser eksponeringen hvis én nøgle kompromitteres."
+      },
+      "fingerprint": {
+        "question": "Hvad er et SSH nøglefingeraftryk?",
+        "answer": "Et SSH nøglefingeraftryk er en kort, unik identifikator udledt fra din offentlige nøgle ved hjælp af en hash-funktion (SHA256 eller MD5). Det bruges til at bekræfte nøglens ægthed når du opretter forbindelse til servere. Fingeraftrykket hjælper dig med at bekræfte at du forbinder til den korrekte server."
+      },
+      "bestAlgorithm": {
+        "question": "Hvad er den bedste SSH nøglealgoritme i 2025?",
+        "answer": "Ed25519 er den anbefalede algoritme i 2025 til de fleste anvendelser. Den giver fremragende sikkerhed med en 256-bit nøglestørrelse, hurtig ydeevne og understøttes af alle moderne SSH implementeringer. Brug kun RSA hvis du har brug for kompatibilitet med ældre systemer."
+      },
+      "authorizedKeys": {
+        "question": "Hvad er authorized_keys filen?",
+        "answer": "Filen authorized_keys (placeret på ~/.ssh/authorized_keys på Linux/macOS servere) indeholder en liste over offentlige nøgler der har tilladelse til at oprette forbindelse til den pågældende konto. Hver linje er én offentlig nøgle. Tilføj din offentlige nøgle til denne fil for at aktivere adgangskodeløst SSH login."
+      },
+      "bestOnlineGenerator": {
+        "question": "Hvad er den bedste SSH nøgle generator online?",
+        "answer": "Denne SSH nøgle generator er en af de bedste gratis online muligheder fordi den kører 100% i din browser, understøtter moderne Ed25519 og RSA algoritmer, virker offline som en PWA, og sender aldrig dine private nøgler til nogen server."
+      },
+      "permissions": {
+        "question": "Hvilke tilladelser skal min private SSH nøgle have?",
+        "answer": "Din private SSH nøgle skal have begrænsede tilladelser. På Linux/macOS, brug 'chmod 600 ~/.ssh/id_ed25519' (ejer læse/skrive) eller 'chmod 400' (kun ejer læse). SSH vil nægte at bruge en nøgle med for åbne tilladelser. Mappen .ssh bør være 700."
+      }
+    }
+  },
+  "theme": {
+    "light": "Lys",
+    "dark": "Mørk",
+    "system": "System"
+  },
+  "notFound": {
+    "title": "Side ikke fundet",
+    "code": "404",
+    "description": "Siden du leder efter findes ikke eller er blevet flyttet.",
+    "backHome": "Tilbage til forsiden"
+  }
+}

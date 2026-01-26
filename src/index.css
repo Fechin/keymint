@@ -382,3 +382,75 @@ select:focus {
     inset 0 1px 3px hsl(0 0% 0% / 0.15),
     0 0 0 3px hsl(var(--primary) / 0.15);
 }
+
+/* RTL Support for Hebrew */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .text-left {
+  text-align: right;
+}
+
+[dir="rtl"] .text-right {
+  text-align: left;
+}
+
+/* Preserve LTR for code blocks and technical content */
+[dir="rtl"] pre,
+[dir="rtl"] code,
+[dir="rtl"] .font-mono,
+[dir="rtl"] kbd {
+  direction: ltr;
+  text-align: left;
+}
+
+/* Fix flex direction for RTL */
+[dir="rtl"] .flex-row {
+  flex-direction: row-reverse;
+}
+
+/* Fix margins and paddings for RTL */
+[dir="rtl"] .ml-auto {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+[dir="rtl"] .mr-auto {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+[dir="rtl"] .ml-2 {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+[dir="rtl"] .mr-2 {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+
+[dir="rtl"] .pl-4 {
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
+[dir="rtl"] .pr-4 {
+  padding-right: 0;
+  padding-left: 1rem;
+}
+
+/* Fix icons positioning in RTL */
+[dir="rtl"] .gap-2 > svg:first-child {
+  order: 1;
+}
+
+/* Ensure grid layouts maintain their structure */
+[dir="rtl"] .grid {
+  direction: ltr;
+}
+
+[dir="rtl"] .grid > * {
+  direction: rtl;
+}

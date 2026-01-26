@@ -1,0 +1,342 @@
+{
+  "header": {
+    "title": "SSH Nyckelgenerator",
+    "subtitle": "Gratis & Säker",
+    "clientSide": "100% Lokalt i webbläsaren",
+    "viewOnGitHub": "Visa på GitHub"
+  },
+  "hero": {
+    "title": "Skapa SSH Nyckel Online",
+    "subtitle": "Generera säkra SSH-nycklar direkt i din webbläsare med denna gratis SSH nyckel generator. Fungerar med GitHub, GitLab, Bitbucket och alla SSH-servrar."
+  },
+  "tabs": {
+    "generate": "Generera Nycklar",
+    "generateShort": "Generera",
+    "commands": "Kommandoläge",
+    "commandsShort": "Kommandon",
+    "config": "SSH Konfiguration",
+    "configShort": "Konfig",
+    "guides": "Plattformsguider",
+    "guidesShort": "Guider"
+  },
+  "generator": {
+    "title": "SSH Nyckelgenerator Online",
+    "description": "Generera ett nytt SSH-nyckelpar säkert i din webbläsare med denna gratis generator. Ingen data skickas till någon server.",
+    "algorithm": "Algoritm",
+    "algorithmTooltip": "Ed25519 rekommenderas för de flesta användningsområden. Använd RSA om du behöver kompatibilitet med äldre system.",
+    "comment": "Kommentar (valfritt)",
+    "commentTooltip": "En kommentar för att identifiera denna nyckel. Vanligtvis din e-postadress.",
+    "commentPlaceholder": "anvandare@exempel.se",
+    "generateButton": "Generera Nyckelpar",
+    "generating": "Genererar...",
+    "passphrase": "Lösenfras (valfritt)",
+    "passphraseTooltip": "En lösenfras ger extra säkerhet. Även om någon får tag på din privata nyckel kan de inte använda den utan lösenfrasen.",
+    "passphrasePlaceholder": "Ange lösenfras för kryptering",
+    "confirmPassphrase": "Bekräfta Lösenfras",
+    "confirmPassphrasePlaceholder": "Ange lösenfrasen igen",
+    "passphrasesMismatch": "Lösenfraserna matchar inte",
+    "noPassphraseWarning": "Ingen lösenfras angiven. Din privata nyckel kommer att vara okrypterad. Överväg att lägga till en lösenfras för extra säkerhet.",
+    "securityTitle": "100% Lokal SSH Nyckelgenerator",
+    "securityDesc": "All nyckelgenerering sker lokalt i din webbläsare. Denna SSH nyckel generator skickar aldrig dina privata nycklar.",
+    "noKeysYet": "Inga nycklar genererade ännu",
+    "noKeysHint": "Klicka på \"Generera Nyckelpar\" för att skapa dina SSH-nycklar"
+  },
+  "algorithms": {
+    "ed25519": "Ed25519 (Rekommenderad)",
+    "ed25519Desc": "Modern, snabb, säker. Bäst för de flesta användningsområden.",
+    "rsa4096": "RSA 4096-bitar",
+    "rsa4096Desc": "Maximal kompatibilitet med äldre system.",
+    "rsa2048": "RSA 2048-bitar",
+    "rsa2048Desc": "Minsta rekommenderade RSA-storlek för kompatibilitet."
+  },
+  "keyDisplay": {
+    "publicKey": "Publik Nyckel",
+    "publicKeyDesc": "Lägg till denna i authorized_keys på fjärrservrar eller på GitHub/GitLab.",
+    "privateKey": "Privat Nyckel",
+    "privateKeyWarning": "Håll denna hemlig! Dela aldrig din privata nyckel.",
+    "fingerprint": "Nyckelfingeravtryck",
+    "copy": "Kopiera",
+    "copied": "Kopierad!",
+    "download": "Ladda ner",
+    "reveal": "Visa",
+    "hide": "Dölj",
+    "clickToReveal": "Klicka på Visa för att se den privata nyckeln"
+  },
+  "commands": {
+    "title": "Kommandon för SSH-nyckelgenerering",
+    "description": "Generera ssh-keygen-kommandon för din plattform. Kopiera och kör dessa i din terminal.",
+    "algorithm": "Algoritm",
+    "comment": "Kommentar",
+    "filename": "Filnamn (valfritt)",
+    "quickCommand": "Snabbkommando",
+    "completeSetup": "Fullständig installation",
+    "copyAll": "Kopiera allt"
+  },
+  "sshConfig": {
+    "title": "SSH Konfigurationsbyggare",
+    "description": "Bygg din ~/.ssh/config-fil. Lägg till värdar och ladda ner konfigurationen.",
+    "hostAlias": "Värdalias",
+    "hostAliasRequired": "Värdalias *",
+    "hostname": "Värdnamn",
+    "hostnameRequired": "Värdnamn *",
+    "hostnamePlaceholder": "192.168.1.100 eller exempel.se",
+    "user": "Användare",
+    "port": "Port",
+    "identityFile": "Identitetsfil",
+    "identityFilePlaceholder": "~/.ssh/id_ed25519",
+    "addHost": "Lägg till värd",
+    "configuredHosts": "Konfigurerade värdar",
+    "generatedConfig": "Genererad konfiguration",
+    "saveToPath": "Spara denna till ~/.ssh/config",
+    "noHosts": "# Inga värdar konfigurerade ännu",
+    "advancedOptions": "Avancerade alternativ",
+    "proxyJump": "ProxyJump",
+    "proxyJumpPlaceholder": "bastion-host",
+    "proxyJumpDesc": "Hoppa via en bastion/jump-värd för att nå målet",
+    "forwardAgent": "Vidarebefordra Agent",
+    "forwardAgentDesc": "Vidarebefordra din SSH-agent till fjärrvärden"
+  },
+  "guides": {
+    "title": "Plattformsguider",
+    "description": "Steg-för-steg-instruktioner för att konfigurera SSH-nycklar på populära Git-plattformar.",
+    "officialDocs": "Officiell dokumentation",
+    "sshSetup": "{platform} SSH-installation",
+    "github": {
+      "step1Title": "Generera SSH-nyckel",
+      "step1Desc": "Använd generatorn ovan eller kör detta kommando:",
+      "step2Title": "Starta SSH-agent",
+      "step2Desc": "Starta ssh-agent i bakgrunden:",
+      "step3Title": "Lägg till nyckel i agenten",
+      "step3Desc": "Lägg till din privata SSH-nyckel i agenten:",
+      "step4Title": "Kopiera publik nyckel",
+      "step4Desc": "Kopiera din publika nyckel till urklipp:",
+      "step5Title": "Lägg till på GitHub",
+      "step5Desc": "Gå till GitHub Inställningar > SSH och GPG-nycklar > Ny SSH-nyckel. Klistra in din publika nyckel.",
+      "step6Title": "Testa anslutningen",
+      "step6Desc": "Verifiera din SSH-anslutning:"
+    },
+    "gitlab": {
+      "step1Title": "Generera SSH-nyckel",
+      "step1Desc": "Använd Ed25519 för bättre säkerhet:",
+      "step2Title": "Lägg till nyckel i agenten",
+      "step2Desc": "Lägg till din SSH-nyckel i agenten:",
+      "step3Title": "Kopiera publik nyckel",
+      "step3Desc": "Kopiera din publika nyckel:",
+      "step4Title": "Lägg till på GitLab",
+      "step4Desc": "Gå till GitLab Inställningar > SSH-nycklar. Klistra in din publika nyckel och ange ett utgångsdatum.",
+      "step5Title": "Testa anslutningen",
+      "step5Desc": "Verifiera din SSH-anslutning:"
+    },
+    "bitbucket": {
+      "step1Title": "Generera SSH-nyckel",
+      "step1Desc": "Skapa en Ed25519 SSH-nyckel:",
+      "step2Title": "Lägg till nyckel i agenten",
+      "step2Desc": "Starta ssh-agent och lägg till din nyckel:",
+      "step3Title": "Kopiera publik nyckel",
+      "step3Desc": "Kopiera din publika nyckel till urklipp:",
+      "step4Title": "Lägg till på Bitbucket",
+      "step4Desc": "Gå till Bitbucket Inställningar > Personliga inställningar > SSH-nycklar > Lägg till nyckel.",
+      "step5Title": "Testa anslutningen",
+      "step5Desc": "Verifiera din SSH-anslutning:"
+    },
+    "aws": {
+      "step1Title": "Generera SSH-nyckel",
+      "step1Desc": "Skapa en Ed25519 SSH-nyckel för AWS EC2:",
+      "step2Title": "Kopiera publik nyckel",
+      "step2Desc": "Visa din publika nyckel för att kopiera den:",
+      "step3Title": "Importera nyckel till AWS",
+      "step3Desc": "Gå till AWS Console > EC2 > Nyckelpar > Åtgärder > Importera nyckelpar. Klistra in din publika nyckel.",
+      "step4Title": "Ange behörigheter",
+      "step4Desc": "Se till att din privata nyckel har rätt behörigheter:",
+      "step5Title": "Anslut till instans",
+      "step5Desc": "SSH:a in till din EC2-instans (ersätt med dina uppgifter):"
+    },
+    "azure": {
+      "step1Title": "Generera SSH-nyckel",
+      "step1Desc": "Skapa en Ed25519 SSH-nyckel för Azure:",
+      "step2Title": "Kopiera publik nyckel",
+      "step2Desc": "Visa din publika nyckel:",
+      "step3Title": "Lägg till vid VM-skapande",
+      "step3Desc": "När du skapar en VM, välj 'SSH publik nyckel' för autentisering och klistra in din publika nyckel.",
+      "step4Title": "Anslut till VM",
+      "step4Desc": "SSH:a in till din Azure VM:",
+      "step5Title": "Uppdatera befintlig VM (valfritt)",
+      "step5Desc": "Lägg till nyckel till befintlig VM med Azure CLI:"
+    },
+    "digitalocean": {
+      "step1Title": "Generera SSH-nyckel",
+      "step1Desc": "Skapa en Ed25519 SSH-nyckel:",
+      "step2Title": "Kopiera publik nyckel",
+      "step2Desc": "Visa din publika nyckel för att kopiera den:",
+      "step3Title": "Lägg till på DigitalOcean",
+      "step3Desc": "Gå till DigitalOcean Kontrollpanel > Inställningar > Säkerhet > SSH-nycklar > Lägg till SSH-nyckel.",
+      "step4Title": "Skapa Droplet",
+      "step4Desc": "När du skapar en Droplet, välj din SSH-nyckel under 'Autentisering'.",
+      "step5Title": "Anslut till Droplet",
+      "step5Desc": "SSH:a in till din Droplet:"
+    }
+  },
+  "footer": {
+    "about": "Om denna SSH Nyckelgenerator",
+    "aboutDesc": "Detta är en gratis SSH nyckel generator med öppen källkod som körs helt i din webbläsare. Ingen serverbearbetning, ingen datainsamling - bara säker nyckelgenerering.",
+    "securityFirst": "Säkerhet först",
+    "security1": "All nyckelgenerering sker i din webbläsare",
+    "security2": "Ingen data skickas till någon server",
+    "security3": "Öppen källkod och granskningsbar kod",
+    "security4": "Använder kryptografiska standardbibliotek",
+    "resources": "Resurser",
+    "sshKeyGuide": "GitHub SSH Dokumentation",
+    "githubSetup": "GitLab SSH Dokumentation",
+    "bestPractices": "SSH Academy",
+    "madeWith": "Skapad med",
+    "forDevelopers": "för utvecklare världen över",
+    "copyright": "© {year} SSH Key Generator. Öppen källkod under MIT-licens."
+  },
+  "seo": {
+    "whatIs": {
+      "title": "Vad är en SSH Nyckelgenerator Online?",
+      "desc": "En SSH nyckel generator online som detta verktyg skapar kryptografiska nyckelpar säkert i din webbläsare. SSH-nycklar består av en publik nyckel (delas med servrar) och en privat nyckel (hålls hemlig). Till skillnad från lösenord är SSH-nycklar genererade online praktiskt taget omöjliga att knäcka genom brute force."
+    },
+    "whyUse": {
+      "title": "Varför använda denna SSH Nyckelgenerator?",
+      "secure": {
+        "title": "Säker onlinegenerering",
+        "desc": "Alla kryptografiska operationer sker i din webbläsare. Denna SSH nyckel generator online säkerställer att dina privata nycklar aldrig lämnar din enhet."
+      },
+      "modern": {
+        "title": "Moderna algoritmer",
+        "desc": "Generera Ed25519-nycklar (rekommenderas) eller RSA-nycklar med upp till 4096-bitars styrka."
+      },
+      "easy": {
+        "title": "Enkel att använda",
+        "desc": "Enkelt gränssnitt med kopiera/ladda ner-knappar. Fungerar direkt utan installation."
+      },
+      "free": {
+        "title": "Gratis och öppen källkod",
+        "desc": "Ingen registrering, ingen spårning, ingen kostnad. MIT-licensierad och gemenskapsverifierad."
+      }
+    },
+    "howTo": {
+      "title": "Hur man skapar SSH-nyckel online",
+      "step1": "Välj algoritm: Välj Ed25519 (rekommenderas) eller RSA",
+      "step2": "Lägg till kommentar: Valfri identifierare som din e-post",
+      "step3": "Generera: Klicka på knappen för att skapa ditt nyckelpar",
+      "step4": "Spara nycklar: Ladda ner eller kopiera dina publika och privata nycklar",
+      "step5": "Lägg till på server: Kopiera publik nyckel till ~/.ssh/authorized_keys eller din Git-leverantör"
+    },
+    "comparison": {
+      "title": "Ed25519 vs RSA: Vilken ska du välja?",
+      "intro": "Att förstå skillnaderna mellan dessa två populära SSH-nyckelalgoritmer hjälper dig att göra rätt val för dina säkerhetsbehov.",
+      "feature": "Egenskap",
+      "algorithmType": "Algoritmtyp",
+      "keySize": "Nyckelstorlek",
+      "signatureSize": "Signaturstorlek",
+      "security": "Säkerhetsnivå",
+      "performance": "Prestanda",
+      "compatibility": "Kompatibilitet",
+      "quantumResistance": "Kvantresistens",
+      "bestFor": "Bäst för",
+      "recommendation": "Rekommendation",
+      "ed25519AlgoType": "Elliptisk kurva (Curve25519)",
+      "rsaAlgoType": "Heltalsfaktorisering",
+      "ed25519KeySize": "256 bitar (kompakt)",
+      "rsaKeySize": "2048-4096 bitar (större)",
+      "ed25519SigSize": "64 byte",
+      "rsaSigSize": "256-512 byte",
+      "ed25519Security": "~128-bitars ekvivalent",
+      "rsaSecurity": "~112-128-bitar (4096)",
+      "ed25519Performance": "Mycket snabb (10x snabbare)",
+      "rsaPerformance": "Långsammare generering",
+      "ed25519Compat": "OpenSSH 6.5+ (2014)",
+      "rsaCompat": "Universell (alla system)",
+      "ed25519Quantum": "Inte kvantsäker",
+      "rsaQuantum": "Inte kvantsäker",
+      "ed25519BestFor": "GitHub, GitLab, moderna servrar",
+      "rsaBestFor": "Äldre system, gammal hårdvara",
+      "ed25519Rec": "Bästa valet för de flesta användare",
+      "rsaRec": "Använd för stöd av äldre system"
+    },
+    "useCases": {
+      "title": "Vanliga användningsområden för SSH-nycklar",
+      "git": {
+        "title": "Git-hosting",
+        "desc": "Pusha och hämta kod säkert från GitHub, GitLab, Bitbucket utan att ange lösenord."
+      },
+      "server": {
+        "title": "Serveråtkomst",
+        "desc": "SSH:a in till Linux/Unix-servrar, molninstanser (AWS, GCP, Azure) och VPS-leverantörer."
+      },
+      "automation": {
+        "title": "CI/CD-automatisering",
+        "desc": "Möjliggör automatiserade distributioner, skript och DevOps-pipelines för att komma åt fjärrresurser."
+      },
+      "tunnels": {
+        "title": "Säkra tunnlar",
+        "desc": "Skapa krypterade tunnlar för databasåtkomst, portvidarebefordran och säker kommunikation."
+      }
+    },
+    "faq": {
+      "title": "Vanliga frågor",
+      "subtitle": "Hitta svar på vanliga frågor om SSH-nycklar och detta verktyg.",
+      "safe": {
+        "question": "Är det säkert att generera SSH-nycklar online?",
+        "answer": "Ja, detta verktyg är 100% säkert eftersom all nyckelgenerering sker helt i din webbläsare med Web Crypto API. Dina privata nycklar lämnar aldrig din enhet och skickas aldrig till någon server. Källkoden är öppen och granskningsbar på GitHub."
+      },
+      "ed25519VsRsa": {
+        "question": "Vad är skillnaden mellan Ed25519 och RSA?",
+        "answer": "Ed25519 är en modern elliptisk kurva-algoritm som erbjuder bättre säkerhet med mindre nyckelstorlekar (256-bitar mot 2048-4096-bitars RSA). Ed25519-nycklar är snabbare att generera och använda, och rekommenderas för de flesta nya SSH-konfigurationer. RSA är äldre men har bredare kompatibilitet med äldre system."
+      },
+      "github": {
+        "question": "Hur lägger jag till min SSH-nyckel på GitHub?",
+        "answer": "1) Generera din SSH-nyckel med detta verktyg, 2) Kopiera den publika nyckeln, 3) Gå till GitHub Inställningar > SSH och GPG-nycklar, 4) Klicka på 'Ny SSH-nyckel', 5) Klistra in din publika nyckel och ge den en titel, 6) Klicka på 'Lägg till SSH-nyckel'. Testa med: ssh -T git@github.com"
+      },
+      "rsaKeySize": {
+        "question": "Vilken nyckelstorlek ska jag använda för RSA?",
+        "answer": "För RSA-nycklar rekommenderas 4096-bitar för maximal säkerhet. 2048-bitar är den minsta acceptabla storleken och erbjuder tillräcklig säkerhet för de flesta ändamål. Nycklar mindre än 2048-bitar anses osäkra och bör inte användas."
+      },
+      "offline": {
+        "question": "Kan jag använda denna SSH nyckelgenerator offline?",
+        "answer": "Ja! Denna SSH nyckel generator är en progressiv webbapp (PWA) som fungerar offline. Efter ditt första besök kan du installera den som en app på din enhet och generera SSH-nycklar utan internetanslutning. Alla kryptografiska operationer körs lokalt i din webbläsare."
+      },
+      "passphrase": {
+        "question": "Bör jag använda en lösenfras för min SSH-nyckel?",
+        "answer": "Ja, att använda en lösenfras rekommenderas starkt. En lösenfras lägger till ett extra säkerhetslager - även om någon får tillgång till din privata nyckelfil kan de inte använda den utan lösenfrasen. Använd en stark, minnesvärd lösenfras för viktiga nycklar."
+      },
+      "multipleServers": {
+        "question": "Kan jag använda samma SSH-nyckel för flera servrar?",
+        "answer": "Ja, du kan använda samma publika SSH-nyckel på flera servrar. För bättre säkerhetspraxis, överväg dock att använda olika nycklar för olika ändamål (t.ex. arbete vs privat, produktion vs utveckling). Detta begränsar exponeringen om en nyckel komprometteras."
+      },
+      "fingerprint": {
+        "question": "Vad är ett SSH-nyckelfingeravtryck?",
+        "answer": "Ett SSH-nyckelfingeravtryck är en kort, unik identifierare som härleds från din publika nyckel med en hashfunktion (SHA256 eller MD5). Det används för att verifiera nyckelns äkthet vid anslutning till servrar. Fingeravtrycket hjälper dig att bekräfta att du ansluter till rätt server."
+      },
+      "bestAlgorithm": {
+        "question": "Vilken är den bästa SSH-nyckelalgoritmen 2025?",
+        "answer": "Ed25519 är den rekommenderade algoritmen 2025 för de flesta användningsområden. Den ger utmärkt säkerhet med en 256-bitars nyckelstorlek, snabb prestanda och stöds av alla moderna SSH-implementationer. Använd endast RSA om du behöver kompatibilitet med äldre system."
+      },
+      "authorizedKeys": {
+        "question": "Vad är authorized_keys-filen?",
+        "answer": "Filen authorized_keys (finns på ~/.ssh/authorized_keys på Linux/macOS-servrar) innehåller en lista över publika nycklar som är tillåtna att ansluta till det kontot. Varje rad är en publik nyckel. Lägg till din publika nyckel i denna fil för att möjliggöra lösenordsfri SSH-inloggning."
+      },
+      "bestOnlineGenerator": {
+        "question": "Vilken är den bästa SSH nyckel generator online?",
+        "answer": "Denna SSH nyckel generator är ett av de bästa gratis alternativen online eftersom den körs 100% i din webbläsare, stöder moderna Ed25519- och RSA-algoritmer, fungerar offline som en PWA och aldrig skickar dina privata nycklar till någon server."
+      },
+      "permissions": {
+        "question": "Vilka behörigheter ska min privata SSH-nyckel ha?",
+        "answer": "Din privata SSH-nyckel bör ha begränsade behörigheter. På Linux/macOS, använd 'chmod 600 ~/.ssh/id_ed25519' (ägare läs/skriv) eller 'chmod 400' (ägare endast läs). SSH vägrar använda en nyckel med för generösa behörigheter. Mappen .ssh bör vara 700."
+      }
+    }
+  },
+  "theme": {
+    "light": "Ljust",
+    "dark": "Mörkt",
+    "system": "System"
+  },
+  "notFound": {
+    "title": "Sidan hittades inte",
+    "code": "404",
+    "description": "Sidan du letar efter finns inte eller har flyttats.",
+    "backHome": "Tillbaka till startsidan"
+  }
+}
